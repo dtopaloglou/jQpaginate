@@ -175,9 +175,6 @@
 			_fnCl : function() {
 				var clickType;
 				switch(base.options.clickEditType) {
-					case null:
-						clickType = 'click';
-						break;
 					case 'click':
 						clickType = 'click';
 						break;
@@ -191,18 +188,27 @@
 					e.stopPropagation();
 					$(this).html('<input class="thVal" type="text" value='+ fns.getPage() +' />');
 					$(".thVal").focus();
-					$(document).click(function () {
-						var val  = $(".thVal").val();
-						if ($(".thVal").length && $.trim(val) != fns.getPage() && !isNaN(val) ) {
-							return fns._redrawLinks(parseInt(val));
-						
-						} else {
-							$(".thVal").remove();
-							$('editable.click-edit').text(fns.getPage());
-							return this;
+					$(document).on('keypress', 'editable.click-edit', function(e) {
+						if(e.which==13) {
+							fns._resetPageEdit();
 						}
 					});
+					$(document).click(function() {
+						fns._resetPageEdit();
+					});					
+					
 				});	
+			},
+			
+			_resetPageEdit : function() {
+				var val  = $(".thVal").val();
+				if ($(".thVal").length && $.trim(val) != fns.getPage() && !isNaN(val) ) {
+					return fns._redrawLinks(parseInt(val));
+				} else {
+					$(".thVal").remove();
+					$('editable.click-edit').text(fns.getPage());
+					return this;
+				}
 			},
 			
 			displayOffset : function() {
