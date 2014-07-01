@@ -1,4 +1,3 @@
-/* light & simple */
 .simple, .current-pos {
 	font-family:  Tahoma, Geneva, sans-serif;
 	position:relative;
@@ -67,6 +66,7 @@ editable { cursor:text; }
 }
 
 
+
 /* dark theme */
 .dark, .current-pos {
 	font-family:  Tahoma, Geneva, sans-serif;
@@ -113,10 +113,6 @@ editable { cursor:text; }
  background-image: -o-linear-gradient(top, #435561, #237482);
  background-image: linear-gradient(to bottom, #435561, #237482);
  text-decoration: none;
-}
-.dark a.paginate-skip {
-	border:none;
-	box-shadow: none;
 }
 .dark .current {
 	background: #666;
