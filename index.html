@@ -1,82 +1,1560 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>jQpaginate by dtopaloglou</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>jQpaginate by dtopaloglou</title>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="javascripts/main.js"></script>
+<script src="paginate.js"></script>
+<script>
+$(function(){ 
+	$('table#data').paginate({ 
+		theme: 'dark',
+		perPage: 10
+	});
+	$('table#data').paginate({ 
+		theme: 'simple',
+			links: '#links2',
+			position: '#pos2',
+			perPage: 10
+	});
+});
+</script>
+<!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+<header>
+  <h1>jQpaginate</h1>
+  <p>A simple jQuery table pagination plugin</p>
+</header>
+<div id="banner"> <span id="logo"></span> <a href="https://github.com/dtopaloglou/jQpaginate" class="button fork"><strong>View On GitHub</strong></a>
+  <div class="downloads"> <span>Downloads:</span>
+    <ul>
+      <li><a href="https://github.com/dtopaloglou/jQpaginate/zipball/master" class="button">ZIP</a></li>
+      <li><a href="https://github.com/dtopaloglou/jQpaginate/tarball/master" class="button">TAR</a></li>
+    </ul>
+  </div>
+</div>
+<!-- end banner -->
 
-  </head>
-  <body>
-
-      <header>
-        <h1>jQpaginate</h1>
-        <p>A simple jQuery table pagination plugin</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/dtopaloglou/jQpaginate" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/dtopaloglou/jQpaginate/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/dtopaloglou/jQpaginate/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<div class="wrapper">
+  <nav>
+    <ul>
+    </ul>
+  </nav>
+  <section>
+    <h3> <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <p>
+    <h2>CSS Themes</h2>
+    "Dark Theme"
+    <div  id='links'></div>
+    <div id="pos"></div>
+    <br>
+    <br>
+    "Simple & Light"
+    <div  id='links2'></div>
+    <div id="pos2"></div>
+    <br>
+    <br>
+    <p>
+    <hr>
+    <div align="center"><strong>Country Codes</strong></div>
+    <table width="100%" align="center" class="sortable" id="data">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Capital</th>
+          <th>Internet</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="c0">
+          <td>Afghanistan</td>
+          <td>Kabul</td>
+          <td>af</td>
+          <td>93</td>
+        </tr>
+        <tr class="c1">
+          <td>Albania</td>
+          <td>Tirana</td>
+          <td>al</td>
+          <td>355</td>
+        </tr>
+        <tr class="c0">
+          <td>Algeria</td>
+          <td>Algiers</td>
+          <td>dz</td>
+          <td>213</td>
+        </tr>
+        <tr class="c1">
+          <td>American Samoa</td>
+          <td>Pago Pago</td>
+          <td>as</td>
+          <td>684</td>
+        </tr>
+        <tr class="c0">
+          <td>Andorra</td>
+          <td>Andorra</td>
+          <td>ad</td>
+          <td>376</td>
+        </tr>
+        <tr class="c1">
+          <td>Angola</td>
+          <td>Luanda</td>
+          <td>ao</td>
+          <td>244</td>
+        </tr>
+        <tr class="c0">
+          <td>Anguilla</td>
+          <td>The Valley</td>
+          <td>ai</td>
+          <td>1-264</td>
+        </tr>
+        <tr class="c1">
+          <td>Antarctica</td>
+          <td>None</td>
+          <td>aq</td>
+          <td>672</td>
+        </tr>
+        <tr class="c0">
+          <td>Antigua and Barbuda</td>
+          <td>St. Johns</td>
+          <td>ag</td>
+          <td>1-268</td>
+        </tr>
+        <tr class="c1">
+          <td>Argentina</td>
+          <td>Buenos Aires</td>
+          <td>ar</td>
+          <td>54</td>
+        </tr>
+        <tr class="c0">
+          <td>Armenia</td>
+          <td>Yerevan</td>
+          <td>am</td>
+          <td>374</td>
+        </tr>
+        <tr class="c1">
+          <td>Aruba</td>
+          <td>Oranjestad</td>
+          <td>aw</td>
+          <td>297</td>
+        </tr>
+        <tr class="c0">
+          <td>Australia</td>
+          <td>Canberra</td>
+          <td>au</td>
+          <td>61</td>
+        </tr>
+        <tr class="c1">
+          <td>Austria</td>
+          <td>Vienna</td>
+          <td>at</td>
+          <td>43</td>
+        </tr>
+        <tr class="c0">
+          <td>Azerbaijan</td>
+          <td>Baku</td>
+          <td>az</td>
+          <td>994</td>
+        </tr>
+        <tr class="c1">
+          <td>Bahamas</td>
+          <td>Nassau</td>
+          <td>bs</td>
+          <td>1-242</td>
+        </tr>
+        <tr class="c0">
+          <td>Bahrain</td>
+          <td>Al-Manamah</td>
+          <td>bh</td>
+          <td>973</td>
+        </tr>
+        <tr class="c1">
+          <td>Bangladesh</td>
+          <td>Dhaka</td>
+          <td>bd</td>
+          <td>880</td>
+        </tr>
+        <tr class="c0">
+          <td>Barbados</td>
+          <td>Bridgetown</td>
+          <td>bb</td>
+          <td>1-246</td>
+        </tr>
+        <tr class="c1">
+          <td>Belarus</td>
+          <td>Minsk</td>
+          <td>by</td>
+          <td>375</td>
+        </tr>
+        <tr class="c0">
+          <td>Belgium</td>
+          <td>Brussels</td>
+          <td>be</td>
+          <td>32</td>
+        </tr>
+        <tr class="c1">
+          <td>Belize</td>
+          <td>Belmopan</td>
+          <td>bz</td>
+          <td>501</td>
+        </tr>
+        <tr class="c0">
+          <td>Benin</td>
+          <td>Porto-Novo</td>
+          <td>bj</td>
+          <td>229</td>
+        </tr>
+        <tr class="c1">
+          <td>Bermuda</td>
+          <td>Hamilton</td>
+          <td>bm</td>
+          <td>1-441</td>
+        </tr>
+        <tr class="c0">
+          <td>Bhutan</td>
+          <td>Thimphu</td>
+          <td>bt</td>
+          <td>975</td>
+        </tr>
+        <tr class="c1">
+          <td>Bolivia</td>
+          <td>La Paz</td>
+          <td>bo</td>
+          <td>591</td>
+        </tr>
+        <tr class="c0">
+          <td>Bosnia-Herzegovina</td>
+          <td>Sarajevo</td>
+          <td>ba</td>
+          <td>387</td>
+        </tr>
+        <tr class="c1">
+          <td>Botswana</td>
+          <td>Gaborone</td>
+          <td>bw</td>
+          <td>267</td>
+        </tr>
+        <tr class="c0">
+          <td>Bouvet Island</td>
+          <td>None</td>
+          <td>bv</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Brazil</td>
+          <td>Brasilia</td>
+          <td>br</td>
+          <td>55</td>
+        </tr>
+        <tr class="c0">
+          <td>British Indian Ocean Territory</td>
+          <td>None</td>
+          <td>io</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Brunei Darussalam</td>
+          <td>Bandar Seri Begawan</td>
+          <td>bn</td>
+          <td>673</td>
+        </tr>
+        <tr class="c0">
+          <td>Bulgaria</td>
+          <td>Sofia</td>
+          <td>bg</td>
+          <td>359</td>
+        </tr>
+        <tr class="c1">
+          <td>Burkina Faso</td>
+          <td>Ouagadougou</td>
+          <td>bf</td>
+          <td>226</td>
+        </tr>
+        <tr class="c0">
+          <td>Burundi</td>
+          <td>Bujumbura</td>
+          <td>bi</td>
+          <td>257</td>
+        </tr>
+        <tr class="c1">
+          <td>Cambodia</td>
+          <td>Phnom Penh</td>
+          <td>kh</td>
+          <td>855</td>
+        </tr>
+        <tr class="c0">
+          <td>Cameroon</td>
+          <td>Yaounde</td>
+          <td>cm</td>
+          <td>237</td>
+        </tr>
+        <tr class="c1">
+          <td>Canada</td>
+          <td>Ottawa</td>
+          <td>ca</td>
+          <td>1</td>
+        </tr>
+        <tr class="c0">
+          <td>Cape Verde</td>
+          <td>Praia</td>
+          <td>cv</td>
+          <td>238</td>
+        </tr>
+        <tr class="c1">
+          <td>Cayman Islands</td>
+          <td>Georgetown</td>
+          <td>ky</td>
+          <td>1-345</td>
+        </tr>
+        <tr class="c0">
+          <td>Central African Republic</td>
+          <td>Bangui</td>
+          <td>cf</td>
+          <td>236</td>
+        </tr>
+        <tr class="c1">
+          <td>Chad</td>
+          <td>N'Djamena</td>
+          <td>td</td>
+          <td>235</td>
+        </tr>
+        <tr class="c0">
+          <td>Chile</td>
+          <td>Santiago</td>
+          <td>cl</td>
+          <td>56</td>
+        </tr>
+        <tr class="c1">
+          <td>China</td>
+          <td>Beijing</td>
+          <td>cn</td>
+          <td>86</td>
+        </tr>
+        <tr class="c0">
+          <td>Christmas Island</td>
+          <td>The Settlement</td>
+          <td>cx</td>
+          <td>61</td>
+        </tr>
+        <tr class="c1">
+          <td>Cocos (Keeling) Islands</td>
+          <td>West Island</td>
+          <td>cc</td>
+          <td>61</td>
+        </tr>
+        <tr class="c0">
+          <td>Colombia</td>
+          <td>Bogota</td>
+          <td>co</td>
+          <td>57</td>
+        </tr>
+        <tr class="c1">
+          <td>Comoros</td>
+          <td>Moroni</td>
+          <td>km</td>
+          <td>269</td>
+        </tr>
+        <tr class="c0">
+          <td>Congo</td>
+          <td>Brazzaville</td>
+          <td>cg</td>
+          <td>242</td>
+        </tr>
+        <tr class="c1">
+          <td>Congo, Dem. Republic</td>
+          <td>Kinshasa</td>
+          <td>cd</td>
+          <td>243</td>
+        </tr>
+        <tr class="c0">
+          <td>Cook Islands</td>
+          <td>Avarua</td>
+          <td>ck</td>
+          <td>682</td>
+        </tr>
+        <tr class="c1">
+          <td>Costa Rica</td>
+          <td>San Jose</td>
+          <td>cr</td>
+          <td>506</td>
+        </tr>
+        <tr class="c0">
+          <td>Croatia</td>
+          <td>Zagreb</td>
+          <td>hr</td>
+          <td>385</td>
+        </tr>
+        <tr class="c1">
+          <td>Cuba</td>
+          <td>Havana</td>
+          <td>cu</td>
+          <td>53</td>
+        </tr>
+        <tr class="c0">
+          <td>Cyprus</td>
+          <td>Nicosia</td>
+          <td>cy</td>
+          <td>357</td>
+        </tr>
+        <tr class="c1">
+          <td>Czech Rep.</td>
+          <td>Prague</td>
+          <td>cz</td>
+          <td>420</td>
+        </tr>
+        <tr class="c0">
+          <td>Denmark</td>
+          <td>Copenhagen</td>
+          <td>dk</td>
+          <td>45</td>
+        </tr>
+        <tr class="c1">
+          <td>Djibouti</td>
+          <td>Djibouti</td>
+          <td>dj</td>
+          <td>253</td>
+        </tr>
+        <tr class="c0">
+          <td>Dominica</td>
+          <td>Roseau</td>
+          <td>dm</td>
+          <td>1-767</td>
+        </tr>
+        <tr class="c1">
+          <td>Dominican Republic</td>
+          <td>Santo Domingo</td>
+          <td>do</td>
+          <td>809</td>
+        </tr>
+        <tr class="c0">
+          <td>Ecuador</td>
+          <td>Quito</td>
+          <td>ec</td>
+          <td>593</td>
+        </tr>
+        <tr class="c1">
+          <td>Egypt</td>
+          <td>Cairo</td>
+          <td>eg</td>
+          <td>20</td>
+        </tr>
+        <tr class="c0">
+          <td>El Salvador</td>
+          <td>San Salvador</td>
+          <td>sv</td>
+          <td>503</td>
+        </tr>
+        <tr class="c1">
+          <td>Equatorial Guinea</td>
+          <td>Malabo</td>
+          <td>gq</td>
+          <td>240</td>
+        </tr>
+        <tr class="c0">
+          <td>Eritrea</td>
+          <td>Asmara</td>
+          <td>er</td>
+          <td>291</td>
+        </tr>
+        <tr class="c1">
+          <td>Estonia</td>
+          <td>Tallinn</td>
+          <td>ee</td>
+          <td>372</td>
+        </tr>
+        <tr class="c0">
+          <td>Ethiopia</td>
+          <td>Addis Ababa</td>
+          <td>et</td>
+          <td>251</td>
+        </tr>
+        <tr class="c1">
+          <td>European Union</td>
+          <td>Brussels</td>
+          <td>eu.int</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>Falkland Islands (Malvinas)</td>
+          <td>Stanley</td>
+          <td>fk</td>
+          <td>500</td>
+        </tr>
+        <tr class="c1">
+          <td>Faroe Islands</td>
+          <td>Torshavn</td>
+          <td>fo</td>
+          <td>298</td>
+        </tr>
+        <tr class="c0">
+          <td>Fiji</td>
+          <td>Suva</td>
+          <td>fj</td>
+          <td>679</td>
+        </tr>
+        <tr class="c1">
+          <td>Finland</td>
+          <td>Helsinki</td>
+          <td>fi</td>
+          <td>358</td>
+        </tr>
+        <tr class="c0">
+          <td>France</td>
+          <td>Paris</td>
+          <td>fr</td>
+          <td>33</td>
+        </tr>
+        <tr class="c1">
+          <td>French Guiana</td>
+          <td>Cayenne</td>
+          <td>gf</td>
+          <td>594</td>
+        </tr>
+        <tr class="c0">
+          <td>French Southern Territories</td>
+          <td>None</td>
+          <td>tf</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Gabon</td>
+          <td>Libreville</td>
+          <td>ga</td>
+          <td>241</td>
+        </tr>
+        <tr class="c0">
+          <td>Gambia</td>
+          <td>Banjul</td>
+          <td>gm</td>
+          <td>220</td>
+        </tr>
+        <tr class="c1">
+          <td>Georgia</td>
+          <td>Tbilisi</td>
+          <td>ge</td>
+          <td>995</td>
+        </tr>
+        <tr class="c0">
+          <td>Germany</td>
+          <td>Berlin</td>
+          <td>de</td>
+          <td>49</td>
+        </tr>
+        <tr class="c1">
+          <td>Ghana</td>
+          <td>Accra</td>
+          <td>gh</td>
+          <td>233</td>
+        </tr>
+        <tr class="c0">
+          <td>Gibraltar</td>
+          <td>Gibraltar</td>
+          <td>gi</td>
+          <td>350</td>
+        </tr>
+        <tr class="c1">
+          <td>Great Britain</td>
+          <td>London</td>
+          <td>gb</td>
+          <td>44</td>
+        </tr>
+        <tr class="c0">
+          <td>Greece</td>
+          <td>Athens</td>
+          <td>gr</td>
+          <td>30</td>
+        </tr>
+        <tr class="c1">
+          <td>Greenland</td>
+          <td>Godthab</td>
+          <td>gl</td>
+          <td>299</td>
+        </tr>
+        <tr class="c0">
+          <td>Grenada</td>
+          <td>St. George's</td>
+          <td>gd</td>
+          <td>1-473</td>
+        </tr>
+        <tr class="c1">
+          <td>Guadeloupe (French)</td>
+          <td>Basse-Terre</td>
+          <td>gp</td>
+          <td>590</td>
+        </tr>
+        <tr class="c0">
+          <td>Guam (USA)</td>
+          <td>Agana</td>
+          <td>gu</td>
+          <td>1-671</td>
+        </tr>
+        <tr class="c1">
+          <td>Guatemala</td>
+          <td>Guatemala City</td>
+          <td>gt</td>
+          <td>502</td>
+        </tr>
+        <tr class="c0">
+          <td>Guernsey</td>
+          <td>St. Peter Port</td>
+          <td>gg</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Guinea</td>
+          <td>Conakry</td>
+          <td>gn</td>
+          <td>224</td>
+        </tr>
+        <tr class="c0">
+          <td>Guinea Bissau</td>
+          <td>Bissau</td>
+          <td>gw</td>
+          <td>245</td>
+        </tr>
+        <tr class="c1">
+          <td>Guyana</td>
+          <td>Georgetown</td>
+          <td>gy</td>
+          <td>592</td>
+        </tr>
+        <tr class="c0">
+          <td>Haiti</td>
+          <td>Port-au-Prince</td>
+          <td>ht</td>
+          <td>509</td>
+        </tr>
+        <tr class="c1">
+          <td>Heard Island and McDonald Islands</td>
+          <td>None</td>
+          <td>hm</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>Honduras</td>
+          <td>Tegucigalpa</td>
+          <td>hn</td>
+          <td>504</td>
+        </tr>
+        <tr class="c1">
+          <td>Hong Kong</td>
+          <td>Victoria</td>
+          <td>hk</td>
+          <td>852</td>
+        </tr>
+        <tr class="c0">
+          <td>Hungary</td>
+          <td>Budapest</td>
+          <td>hu</td>
+          <td>36</td>
+        </tr>
+        <tr class="c1">
+          <td>Iceland</td>
+          <td>Reykjavik</td>
+          <td>is</td>
+          <td>354</td>
+        </tr>
+        <tr class="c0">
+          <td>India</td>
+          <td>New Delhi</td>
+          <td>in</td>
+          <td>91</td>
+        </tr>
+        <tr class="c1">
+          <td>Indonesia</td>
+          <td>Jakarta</td>
+          <td>id</td>
+          <td>62</td>
+        </tr>
+        <tr class="c0">
+          <td>Iran</td>
+          <td>Tehran</td>
+          <td>ir</td>
+          <td>98</td>
+        </tr>
+        <tr class="c1">
+          <td>Iraq</td>
+          <td>Baghdad</td>
+          <td>iq</td>
+          <td>964</td>
+        </tr>
+        <tr class="c0">
+          <td>Ireland</td>
+          <td>Dublin</td>
+          <td>ie</td>
+          <td>353</td>
+        </tr>
+        <tr class="c1">
+          <td>Isle of Man</td>
+          <td>Douglas</td>
+          <td>im</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>Israel</td>
+          <td>Jerusalem</td>
+          <td>il</td>
+          <td>972</td>
+        </tr>
+        <tr class="c1">
+          <td>Italy</td>
+          <td>Rome</td>
+          <td>it</td>
+          <td>39</td>
+        </tr>
+        <tr class="c0">
+          <td>Ivory Coast</td>
+          <td>Abidjan</td>
+          <td>ci</td>
+          <td>225</td>
+        </tr>
+        <tr class="c1">
+          <td>Jamaica</td>
+          <td>Kingston</td>
+          <td>jm</td>
+          <td>1-876</td>
+        </tr>
+        <tr class="c0">
+          <td>Japan</td>
+          <td>Tokyo</td>
+          <td>jp</td>
+          <td>81</td>
+        </tr>
+        <tr class="c1">
+          <td>Jersey</td>
+          <td>Saint Helier</td>
+          <td>je</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>Jordan</td>
+          <td>Amman</td>
+          <td>jo</td>
+          <td>962</td>
+        </tr>
+        <tr class="c1">
+          <td>Kazakhstan</td>
+          <td>Astana</td>
+          <td>kz</td>
+          <td>7</td>
+        </tr>
+        <tr class="c0">
+          <td>Kenya</td>
+          <td>Nairobi</td>
+          <td>ke</td>
+          <td>254</td>
+        </tr>
+        <tr class="c1">
+          <td>Kiribati</td>
+          <td>Tarawa</td>
+          <td>ki</td>
+          <td>686</td>
+        </tr>
+        <tr class="c0">
+          <td>Korea-North</td>
+          <td>Pyongyang</td>
+          <td>kp</td>
+          <td>850</td>
+        </tr>
+        <tr class="c1">
+          <td>Korea-South</td>
+          <td>Seoul</td>
+          <td>kr</td>
+          <td>82</td>
+        </tr>
+        <tr class="c0">
+          <td>Kuwait</td>
+          <td>Kuwait City</td>
+          <td>kw</td>
+          <td>965</td>
+        </tr>
+        <tr class="c1">
+          <td>Kyrgyzstan</td>
+          <td>Bishkek</td>
+          <td>kg</td>
+          <td>996</td>
+        </tr>
+        <tr class="c0">
+          <td>Laos</td>
+          <td>Vientiane</td>
+          <td>la</td>
+          <td>856</td>
+        </tr>
+        <tr class="c1">
+          <td>Latvia</td>
+          <td>Riga</td>
+          <td>lv</td>
+          <td>371</td>
+        </tr>
+        <tr class="c0">
+          <td>Lebanon</td>
+          <td>Beirut</td>
+          <td>lb</td>
+          <td>961</td>
+        </tr>
+        <tr class="c1">
+          <td>Lesotho</td>
+          <td>Maseru</td>
+          <td>ls</td>
+          <td>266</td>
+        </tr>
+        <tr class="c0">
+          <td>Liberia</td>
+          <td>Monrovia</td>
+          <td>lr</td>
+          <td>231</td>
+        </tr>
+        <tr class="c1">
+          <td>Libya</td>
+          <td>Tripoli</td>
+          <td>ly</td>
+          <td>218</td>
+        </tr>
+        <tr class="c0">
+          <td>Liechtenstein</td>
+          <td>Vaduz</td>
+          <td>li</td>
+          <td>423</td>
+        </tr>
+        <tr class="c1">
+          <td>Lithuania</td>
+          <td>Vilnius</td>
+          <td>lt</td>
+          <td>370</td>
+        </tr>
+        <tr class="c0">
+          <td>Luxembourg</td>
+          <td>Luxembourg</td>
+          <td>lu</td>
+          <td>352</td>
+        </tr>
+        <tr class="c1">
+          <td>Macau</td>
+          <td>Macau</td>
+          <td>mo</td>
+          <td>853</td>
+        </tr>
+        <tr class="c0">
+          <td>Macedonia</td>
+          <td>Skopje</td>
+          <td>mk</td>
+          <td>389</td>
+        </tr>
+        <tr class="c1">
+          <td>Madagascar</td>
+          <td>Antananarivo</td>
+          <td>mg</td>
+          <td>261</td>
+        </tr>
+        <tr class="c0">
+          <td>Malawi</td>
+          <td>Lilongwe</td>
+          <td>mw</td>
+          <td>265</td>
+        </tr>
+        <tr class="c1">
+          <td>Malaysia</td>
+          <td>Kuala Lumpur</td>
+          <td>my</td>
+          <td>60</td>
+        </tr>
+        <tr class="c0">
+          <td>Maldives</td>
+          <td>Male</td>
+          <td>mv</td>
+          <td>960</td>
+        </tr>
+        <tr class="c1">
+          <td>Mali</td>
+          <td>Bamako</td>
+          <td>ml</td>
+          <td>223</td>
+        </tr>
+        <tr class="c0">
+          <td>Malta</td>
+          <td>Valletta</td>
+          <td>mt</td>
+          <td>356</td>
+        </tr>
+        <tr class="c1">
+          <td>Marshall Islands</td>
+          <td>Majuro</td>
+          <td>mh</td>
+          <td>692</td>
+        </tr>
+        <tr class="c0">
+          <td>Martinique (French)</td>
+          <td>Fort-de-France</td>
+          <td>mq</td>
+          <td>596</td>
+        </tr>
+        <tr class="c1">
+          <td>Mauritania</td>
+          <td>Nouakchott</td>
+          <td>mr</td>
+          <td>222</td>
+        </tr>
+        <tr class="c0">
+          <td>Mauritius</td>
+          <td>Port Louis</td>
+          <td>mu</td>
+          <td>230</td>
+        </tr>
+        <tr class="c1">
+          <td>Mayotte</td>
+          <td>Dzaoudzi</td>
+          <td>yt</td>
+          <td>269</td>
+        </tr>
+        <tr class="c0">
+          <td>Mexico</td>
+          <td>Mexico City</td>
+          <td>mx</td>
+          <td>52</td>
+        </tr>
+        <tr class="c1">
+          <td>Micronesia</td>
+          <td>Palikir</td>
+          <td>fm</td>
+          <td>691</td>
+        </tr>
+        <tr class="c0">
+          <td>Moldova</td>
+          <td>Kishinev</td>
+          <td>md</td>
+          <td>373</td>
+        </tr>
+        <tr class="c1">
+          <td>Monaco</td>
+          <td>Monaco</td>
+          <td>mc</td>
+          <td>377</td>
+        </tr>
+        <tr class="c0">
+          <td>Mongolia</td>
+          <td>Ulan Bator</td>
+          <td>mn</td>
+          <td>976</td>
+        </tr>
+        <tr class="c1">
+          <td>Montenegro</td>
+          <td>Podgorica</td>
+          <td>me</td>
+          <td>382</td>
+        </tr>
+        <tr class="c0">
+          <td>Montserrat</td>
+          <td>Plymouth</td>
+          <td>ms</td>
+          <td>1-664</td>
+        </tr>
+        <tr class="c1">
+          <td>Morocco</td>
+          <td>Rabat</td>
+          <td>ma</td>
+          <td>212</td>
+        </tr>
+        <tr class="c0">
+          <td>Mozambique</td>
+          <td>Maputo</td>
+          <td>mz</td>
+          <td>258</td>
+        </tr>
+        <tr class="c1">
+          <td>Myanmar</td>
+          <td>Naypyidaw</td>
+          <td>mm</td>
+          <td>95</td>
+        </tr>
+        <tr class="c0">
+          <td>Namibia</td>
+          <td>Windhoek</td>
+          <td>na</td>
+          <td>264</td>
+        </tr>
+        <tr class="c1">
+          <td>Nauru</td>
+          <td>Yaren</td>
+          <td>nr</td>
+          <td>674</td>
+        </tr>
+        <tr class="c0">
+          <td>Nepal</td>
+          <td>Kathmandu</td>
+          <td>np</td>
+          <td>977</td>
+        </tr>
+        <tr class="c1">
+          <td>Netherlands</td>
+          <td>Amsterdam</td>
+          <td>nl</td>
+          <td>31</td>
+        </tr>
+        <tr class="c0">
+          <td>Netherlands Antilles</td>
+          <td>Willemstad</td>
+          <td>an</td>
+          <td>599</td>
+        </tr>
+        <tr class="c1">
+          <td>New Caledonia (French)</td>
+          <td>Noumea</td>
+          <td>nc</td>
+          <td>687</td>
+        </tr>
+        <tr class="c0">
+          <td>New Zealand</td>
+          <td>Wellington</td>
+          <td>nz</td>
+          <td>64</td>
+        </tr>
+        <tr class="c1">
+          <td>Nicaragua</td>
+          <td>Managua</td>
+          <td>ni</td>
+          <td>505</td>
+        </tr>
+        <tr class="c0">
+          <td>Niger</td>
+          <td>Niamey</td>
+          <td>ne</td>
+          <td>227</td>
+        </tr>
+        <tr class="c1">
+          <td>Nigeria</td>
+          <td>Lagos</td>
+          <td>ng</td>
+          <td>234</td>
+        </tr>
+        <tr class="c0">
+          <td>Niue</td>
+          <td>Alofi</td>
+          <td>nu</td>
+          <td>683</td>
+        </tr>
+        <tr class="c1">
+          <td>Norfolk Island</td>
+          <td>Kingston</td>
+          <td>nf</td>
+          <td>672</td>
+        </tr>
+        <tr class="c0">
+          <td>Northern Mariana Islands</td>
+          <td>Saipan</td>
+          <td>mp</td>
+          <td>670</td>
+        </tr>
+        <tr class="c1">
+          <td>Norway</td>
+          <td>Oslo</td>
+          <td>no</td>
+          <td>47</td>
+        </tr>
+        <tr class="c0">
+          <td>Oman</td>
+          <td>Muscat</td>
+          <td>om</td>
+          <td>968</td>
+        </tr>
+        <tr class="c1">
+          <td>Pakistan</td>
+          <td>Islamabad</td>
+          <td>pk</td>
+          <td>92</td>
+        </tr>
+        <tr class="c0">
+          <td>Palau</td>
+          <td>Koror</td>
+          <td>pw</td>
+          <td>680</td>
+        </tr>
+        <tr class="c1">
+          <td>Panama</td>
+          <td>Panama City</td>
+          <td>pa</td>
+          <td>507</td>
+        </tr>
+        <tr class="c0">
+          <td>Papua New Guinea</td>
+          <td>Port Moresby</td>
+          <td>pg</td>
+          <td>675</td>
+        </tr>
+        <tr class="c1">
+          <td>Paraguay</td>
+          <td>Asuncion</td>
+          <td>py</td>
+          <td>595</td>
+        </tr>
+        <tr class="c0">
+          <td>Peru</td>
+          <td>Lima</td>
+          <td>pe</td>
+          <td>51</td>
+        </tr>
+        <tr class="c1">
+          <td>Philippines</td>
+          <td>Manila</td>
+          <td>ph</td>
+          <td>63</td>
+        </tr>
+        <tr class="c0">
+          <td>Pitcairn Island</td>
+          <td>Adamstown</td>
+          <td>pn</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Poland</td>
+          <td>Warsaw</td>
+          <td>pl</td>
+          <td>48</td>
+        </tr>
+        <tr class="c0">
+          <td>Polynesia (French)</td>
+          <td>Papeete</td>
+          <td>pf</td>
+          <td>689</td>
+        </tr>
+        <tr class="c1">
+          <td>Portugal</td>
+          <td>Lisbon</td>
+          <td>pt</td>
+          <td>351</td>
+        </tr>
+        <tr class="c0">
+          <td>Puerto Rico</td>
+          <td>San Juan</td>
+          <td>pr</td>
+          <td>1-787</td>
+        </tr>
+        <tr class="c1">
+          <td>Qatar</td>
+          <td>Doha</td>
+          <td>qa</td>
+          <td>974</td>
+        </tr>
+        <tr class="c0">
+          <td>Reunion (French)</td>
+          <td>Saint-Denis</td>
+          <td>re</td>
+          <td>262</td>
+        </tr>
+        <tr class="c1">
+          <td>Romania</td>
+          <td>Bucharest</td>
+          <td>ro</td>
+          <td>40</td>
+        </tr>
+        <tr class="c0">
+          <td>Russia</td>
+          <td>Moscow</td>
+          <td>ru</td>
+          <td>7</td>
+        </tr>
+        <tr class="c1">
+          <td>Rwanda</td>
+          <td>Kigali</td>
+          <td>rw</td>
+          <td>250</td>
+        </tr>
+        <tr class="c0">
+          <td>Saint Helena</td>
+          <td>Jamestown</td>
+          <td>sh</td>
+          <td>290</td>
+        </tr>
+        <tr class="c1">
+          <td>Saint Kitts &amp; Nevis Anguilla</td>
+          <td>Basseterre</td>
+          <td>kn</td>
+          <td>1-869</td>
+        </tr>
+        <tr class="c0">
+          <td>Saint Lucia</td>
+          <td>Castries</td>
+          <td>lc</td>
+          <td>1-758</td>
+        </tr>
+        <tr class="c1">
+          <td>Saint Pierre and Miquelon</td>
+          <td>St. Pierre</td>
+          <td>pm</td>
+          <td>508</td>
+        </tr>
+        <tr class="c0">
+          <td>Saint Vincent &amp; Grenadines</td>
+          <td>Kingstown</td>
+          <td>vc</td>
+          <td>1-784</td>
+        </tr>
+        <tr class="c1">
+          <td>Samoa</td>
+          <td>Apia</td>
+          <td>ws</td>
+          <td>684</td>
+        </tr>
+        <tr class="c0">
+          <td>San Marino</td>
+          <td>San Marino</td>
+          <td>sm</td>
+          <td>378</td>
+        </tr>
+        <tr class="c1">
+          <td>Sao Tome and Principe</td>
+          <td>Sao Tome</td>
+          <td>st</td>
+          <td>239</td>
+        </tr>
+        <tr class="c0">
+          <td>Saudi Arabia</td>
+          <td>Riyadh</td>
+          <td>sa</td>
+          <td>966</td>
+        </tr>
+        <tr class="c1">
+          <td>Senegal</td>
+          <td>Dakar</td>
+          <td>sn</td>
+          <td>221</td>
+        </tr>
+        <tr class="c0">
+          <td>Serbia</td>
+          <td>Belgrade</td>
+          <td>rs</td>
+          <td>381</td>
+        </tr>
+        <tr class="c1">
+          <td>Seychelles</td>
+          <td>Victoria</td>
+          <td>sc</td>
+          <td>248</td>
+        </tr>
+        <tr class="c0">
+          <td>Sierra Leone</td>
+          <td>Freetown</td>
+          <td>sl</td>
+          <td>232</td>
+        </tr>
+        <tr class="c1">
+          <td>Singapore</td>
+          <td>Singapore</td>
+          <td>sg</td>
+          <td>65</td>
+        </tr>
+        <tr class="c0">
+          <td>Slovakia</td>
+          <td>Bratislava</td>
+          <td>sk</td>
+          <td>421</td>
+        </tr>
+        <tr class="c1">
+          <td>Slovenia</td>
+          <td>Ljubljana</td>
+          <td>si</td>
+          <td>386</td>
+        </tr>
+        <tr class="c0">
+          <td>Solomon Islands</td>
+          <td>Honiara</td>
+          <td>sb</td>
+          <td>677</td>
+        </tr>
+        <tr class="c1">
+          <td>Somalia</td>
+          <td>Mogadishu</td>
+          <td>so</td>
+          <td>252</td>
+        </tr>
+        <tr class="c0">
+          <td>South Africa</td>
+          <td>Pretoria</td>
+          <td>za</td>
+          <td>27</td>
+        </tr>
+        <tr class="c1">
+          <td>South Georgia &amp; South Sandwich Islands</td>
+          <td>None</td>
+          <td>gs</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>South Sudan</td>
+          <td>Ramciel</td>
+          <td>ss</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Spain</td>
+          <td>Madrid</td>
+          <td>es</td>
+          <td>34</td>
+        </tr>
+        <tr class="c0">
+          <td>Sri Lanka</td>
+          <td>Colombo</td>
+          <td>lk</td>
+          <td>94</td>
+        </tr>
+        <tr class="c1">
+          <td>Sudan</td>
+          <td>Khartoum</td>
+          <td>sd</td>
+          <td>249</td>
+        </tr>
+        <tr class="c0">
+          <td>Suriname</td>
+          <td>Paramaribo</td>
+          <td>sr</td>
+          <td>597</td>
+        </tr>
+        <tr class="c1">
+          <td>Svalbard and Jan Mayen Islands</td>
+          <td>Longyearbyen</td>
+          <td>sj</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>Swaziland</td>
+          <td>Mbabane</td>
+          <td>sz</td>
+          <td>268</td>
+        </tr>
+        <tr class="c1">
+          <td>Sweden</td>
+          <td>Stockholm</td>
+          <td>se</td>
+          <td>46</td>
+        </tr>
+        <tr class="c0">
+          <td>Switzerland</td>
+          <td>Bern</td>
+          <td>ch</td>
+          <td>41</td>
+        </tr>
+        <tr class="c1">
+          <td>Syria</td>
+          <td>Damascus</td>
+          <td>sy</td>
+          <td>963</td>
+        </tr>
+        <tr class="c0">
+          <td>Taiwan</td>
+          <td>Taipei</td>
+          <td>tw</td>
+          <td>886</td>
+        </tr>
+        <tr class="c1">
+          <td>Tajikistan</td>
+          <td>Dushanbe</td>
+          <td>tj</td>
+          <td>992</td>
+        </tr>
+        <tr class="c0">
+          <td>Tanzania</td>
+          <td>Dodoma</td>
+          <td>tz</td>
+          <td>255</td>
+        </tr>
+        <tr class="c1">
+          <td>Thailand</td>
+          <td>Bangkok</td>
+          <td>th</td>
+          <td>66</td>
+        </tr>
+        <tr class="c0">
+          <td>Togo</td>
+          <td>Lome</td>
+          <td>tg</td>
+          <td>228</td>
+        </tr>
+        <tr class="c1">
+          <td>Tokelau</td>
+          <td>None</td>
+          <td>tk</td>
+          <td>690</td>
+        </tr>
+        <tr class="c0">
+          <td>Tonga</td>
+          <td>Nuku'alofa</td>
+          <td>to</td>
+          <td>676</td>
+        </tr>
+        <tr class="c1">
+          <td>Trinidad and Tobago</td>
+          <td>Port of Spain</td>
+          <td>tt</td>
+          <td>1-868</td>
+        </tr>
+        <tr class="c0">
+          <td>Tunisia</td>
+          <td>Tunis</td>
+          <td>tn</td>
+          <td>216</td>
+        </tr>
+        <tr class="c1">
+          <td>Turkey</td>
+          <td>Ankara</td>
+          <td>tr</td>
+          <td>90</td>
+        </tr>
+        <tr class="c0">
+          <td>Turkmenistan</td>
+          <td>Ashgabat</td>
+          <td>tm</td>
+          <td>993</td>
+        </tr>
+        <tr class="c1">
+          <td>Turks and Caicos Islands</td>
+          <td>Grand Turk</td>
+          <td>tc</td>
+          <td>1-649</td>
+        </tr>
+        <tr class="c0">
+          <td>Tuvalu</td>
+          <td>Funafuti</td>
+          <td>tv</td>
+          <td>688</td>
+        </tr>
+        <tr class="c1">
+          <td>U.K.</td>
+          <td>London</td>
+          <td>uk</td>
+          <td>44</td>
+        </tr>
+        <tr class="c0">
+          <td>Uganda</td>
+          <td>Kampala</td>
+          <td>ug</td>
+          <td>256</td>
+        </tr>
+        <tr class="c1">
+          <td>Ukraine</td>
+          <td>Kiev</td>
+          <td>ua</td>
+          <td>380</td>
+        </tr>
+        <tr class="c0">
+          <td>United Arab Emirates</td>
+          <td>Abu Dhabi</td>
+          <td>ae</td>
+          <td>971</td>
+        </tr>
+        <tr class="c1">
+          <td>Uruguay</td>
+          <td>Montevideo</td>
+          <td>uy</td>
+          <td>598</td>
+        </tr>
+        <tr class="c0">
+          <td>USA</td>
+          <td>Washington</td>
+          <td>us</td>
+          <td>1</td>
+        </tr>
+        <tr class="c1">
+          <td>USA Minor Outlying Islands</td>
+          <td>None</td>
+          <td>um</td>
+          <td></td>
+        </tr>
+        <tr class="c0">
+          <td>Uzbekistan</td>
+          <td>Tashkent</td>
+          <td>uz</td>
+          <td>998</td>
+        </tr>
+        <tr class="c1">
+          <td>Vanuatu</td>
+          <td>Port Vila</td>
+          <td>vu</td>
+          <td>678</td>
+        </tr>
+        <tr class="c0">
+          <td>Vatican</td>
+          <td>Vatican City</td>
+          <td>va</td>
+          <td>39</td>
+        </tr>
+        <tr class="c1">
+          <td>Venezuela</td>
+          <td>Caracas</td>
+          <td>ve</td>
+          <td>58</td>
+        </tr>
+        <tr class="c0">
+          <td>Vietnam</td>
+          <td>Hanoi</td>
+          <td>vn</td>
+          <td>84</td>
+        </tr>
+        <tr class="c1">
+          <td>Virgin Islands (British)</td>
+          <td>Road Town</td>
+          <td>vg</td>
+          <td>1-284</td>
+        </tr>
+        <tr class="c0">
+          <td>Virgin Islands (USA)</td>
+          <td>Charlotte Amalie</td>
+          <td>vi</td>
+          <td>1-340</td>
+        </tr>
+        <tr class="c1">
+          <td>Wallis and Futuna Islands</td>
+          <td>Mata-Utu</td>
+          <td>wf</td>
+          <td>681</td>
+        </tr>
+        <tr class="c0">
+          <td>Western Sahara</td>
+          <td>El Aaiun</td>
+          <td>eh</td>
+          <td></td>
+        </tr>
+        <tr class="c1">
+          <td>Yemen</td>
+          <td>San'a</td>
+          <td>ye</td>
+          <td>967</td>
+        </tr>
+        <tr class="c0">
+          <td>Zambia</td>
+          <td>Lusaka</td>
+          <td>zm</td>
+          <td>260</td>
+        </tr>
+        <tr class="c1">
+          <td>Zimbabwe</td>
+          <td>Harare</td>
+          <td>zw</td>
+          <td>263</td>
+        </tr>
+      </tbody>
+    </table>
+    </p>
+    </p>
+    <pre><code>$ cd your_repo_root/repo_name
+                $ git fetch origin
+                $ git checkout gh-pages
 </code></pre>
+  </section>
+  <footer>
+    <p>Project maintained by <a href="https://github.com/dtopaloglou">Dimitri</a></p>
+    <p><small>Hosted on GitHub Pages &mdash;</small></p>
+  </footer>
+</div>
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/dtopaloglou">dtopaloglou</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</body>
 </html>

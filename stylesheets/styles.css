@@ -497,10 +497,6 @@ textarea {
 /*
  * Remove most spacing between table cells
  */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 
 body {
   font: 14px/22px "Quattrocento Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -516,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
 }
 
-p, ul, ol, table, pre, dl {
+p, ul, ol, pre, dl {
   margin: 0 0 20px;
 }
 
@@ -615,10 +611,7 @@ pre code {
   padding: 0px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
+
 
 th {
   text-align: left;
