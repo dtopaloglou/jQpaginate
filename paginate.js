@@ -255,10 +255,10 @@
     };
 	
     $.fn.paginate.defaultOptions = {
-        perPage: 28,
+        perPage: 10,
         displayedPages: 2, 
 		pageOnly: false,   
-		theme: 'simple',
+		theme: 'light',
 		dataTable: 'tbody tr',
 		hrefTextPrefix: '#page-',
 		skipper: true,
