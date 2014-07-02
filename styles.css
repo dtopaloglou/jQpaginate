@@ -1,28 +1,32 @@
 editable { cursor:text; }
-a, span, .current-pos {
-	float: left;
+
+.simple a, .dark a, .simple span, .dark span, .current-pos {
+
 	min-width: 14px;
 	padding: 0 7px;
 	margin: 0 2px 0 0;
 	border-radius: 3px;
 	text-decoration: none;
 	font-weight:  bold;
-	display: block;
+	display:inline-block;
 	font-size:12px;
-	font-family:  Tahoma, Geneva, sans-serif;
 	text-align:center;
-	line-height:24px;
+	line-height:24px;	
+	
+}
+.thVal {
+	position:relative;
+	color:#000;
+	top:0px;
+	padding-left:6px;
+	height:13px;
+	width:19px;
 }
 /**/
 
 
 
-.simple .thVal {
-	position:relative;
-	top:0px;
-	height:13px;
-	width:19px;
-}
+
 .simple a, .simple span, .simple.current-pos {
 	color: #666;
 	border: 1px solid #BBB;
@@ -37,8 +41,6 @@ a, span, .current-pos {
 	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.simple a, .simple span, .current-pos { }
-.simple .click-edit { }
  .simple a:hover:not(.paginate-skip) {
  color:#FFF;
  background-color: #CEDCE7;
@@ -68,13 +70,7 @@ a, span, .current-pos {
 }
 /* dark theme */
 
-.dark .thVal {
-	position:relative;
-	top:0px;
-	height:13px;
-	width:19px;
-}
-editable { cursor:text; }
+
 .dark a, .dark span, .dark.current-pos {
 	color: #FFF;
 	border: 1px solid #000;
