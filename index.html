@@ -15,13 +15,13 @@ $(function(){
         perPage: 10,
 		links: '#links',
 		theme: 'dark',
-		position: '#pos',
+		positionLinks: '#pos',
 	});
 	
 	$('table#countries').paginate({
         perPage: 10,
 		links: '#links2',
-		position: '#pos2',
+		positionLinks: '#pos2',
 	});	
 	
 	
@@ -29,7 +29,7 @@ $(function(){
         perPage: 10,
 		links: '#links3',
 		theme: 'compact',
-		position: '#pos3',
+		positionLinks: '#pos3',
 	});		
 
 });
@@ -44,7 +44,7 @@ $(function(){
     <h1 class="title">jQpaginate</h1>
   </header>
   <div id="container">
-    <p class="tagline">A simple jQuery table pagination plugin</p>
+    <p class="tagline">A simple jQuery  pagination plugin</p>
     <div id="main" role="main">
       <div class="download-bar">
         <div class="inner"> <a href="https://github.com/dtopaloglou/jQpaginate/tarball/master" class="download-button tar"><span>Download</span></a> <a href="https://github.com/dtopaloglou/jQpaginate/zipball/master" class="download-button zip"><span>Download</span></a> <a href="https://github.com/dtopaloglou/jQpaginate" class="code">View jQpaginate on GitHub</a> </div>
@@ -53,7 +53,6 @@ $(function(){
         <h3> <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
       
         <h2>Demo</h2>
-
         "Dark Theme"
         <div id="links" style="float:left;"></div>
         <div id="pos" ></div>
@@ -66,1594 +65,1611 @@ $(function(){
         <div id="links3" style="float:left;"></div>
         <div id="pos3" ></div>
         <hr>
-        <div align="center"><strong>Populations by Country</strong></div>
+        <div align="center"><strong>Population by Country</strong></div>
         <table cellpadding="0" cellspacing="0" id="countries">
           <thead style="font-size:11px;">
             <tr>
-              <th >Country Name:</th>
-              <th>Population</th>
-              <th>Area <br />
-                (Sq. Km.)</th>
-              <th>Population Density<br />
-                (Sq. Km.)</th>
-              <th>Area <br />
-                (Sq. Mi.)</th>
-              <th>Population Density<br />
-                (Sq. Mi.)</th>
+              <th ><div align="center">Country Name:</div></th>
+              <th><div align="center">Population</div></th>
+              <th><div align="center">Area <br />
+                (Sq. Km.)</div></th>
+              <th><div align="center">Population Density<br />
+                (Sq. Km.)</div></th>
+              <th><div align="center">Area <br />
+                (Sq. Mi.)</div></th>
+              <th><div align="center">Population Density<br />
+                (Sq. Mi.)</div></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>China</td>
-              <td>1,339,190,000</td>
-              <td>9,596,960.00</td>
-              <td>139.54</td>
-              <td>3,705,405.45</td>
-              <td>361.42</td>
-            </tr>
-            <tr>
-              <td>India</td>
-              <td>1,184,639,000</td>
-              <td>3,287,590.00</td>
-              <td>360.34</td>
-              <td>1,269,345.07</td>
-              <td>933.27</td>
-            </tr>
-            <tr>
-              <td>United States of America</td>
-              <td>309,975,000</td>
-              <td>9,629,091.00</td>
-              <td>32.19</td>
-              <td>3,717,811.29</td>
-              <td>83.38</td>
-            </tr>
-            <tr>
-              <td>Indonesia</td>
-              <td>234,181,400</td>
-              <td>1,919,440.00</td>
-              <td>122.01</td>
-              <td>741,099.62</td>
-              <td>315.99</td>
-            </tr>
-            <tr>
-              <td>Brazil</td>
-              <td>193,364,000</td>
-              <td>8,511,965.00</td>
-              <td>22.72</td>
-              <td>3,286,486.71</td>
-              <td>58.84</td>
-            </tr>
-            <tr>
-              <td>Pakistan</td>
-              <td>170,260,000</td>
-              <td>803,940.00</td>
-              <td>211.78</td>
-              <td>310,402.84</td>
-              <td>548.51</td>
-            </tr>
-            <tr>
-              <td>Bangladesh</td>
-              <td>164,425,000</td>
-              <td>144,000.00</td>
-              <td>1,141.84</td>
-              <td>55,598.69</td>
-              <td>2,957.35</td>
-            </tr>
-            <tr>
-              <td>Nigeria</td>
-              <td>170,123,000</td>
-              <td>923,768.00</td>
-              <td>171.32</td>
-              <td>356,668.67</td>
-              <td>443.71</td>
-            </tr>
-            <tr>
-              <td>Russia</td>
-              <td>141,927,297</td>
-              <td>17,075,200.00</td>
-              <td>8.31</td>
-              <td>6,592,768.87</td>
-              <td>21.53</td>
-            </tr>
-            <tr>
-              <td>Japan</td>
-              <td>127,380,000</td>
-              <td>377,835.00</td>
-              <td>337.13</td>
-              <td>145,882.85</td>
-              <td>873.17</td>
-            </tr>
-            <tr>
-              <td>Mexico</td>
-              <td>108,396,211</td>
-              <td>1,972,550.00</td>
-              <td>54.95</td>
-              <td>761,605.50</td>
-              <td>142.33</td>
-            </tr>
-            <tr>
-              <td>Phillipines</td>
-              <td>94,013,200</td>
-              <td>300,000.00</td>
-              <td>313.38</td>
-              <td>115,830.60</td>
-              <td>811.64</td>
-            </tr>
-            <tr>
-              <td>Vietnam</td>
-              <td>85,789,573</td>
-              <td>329,560.00</td>
-              <td>260.32</td>
-              <td>127,243.78</td>
-              <td>674.21</td>
+              <td><div align="center">China</div></td>
+              <td><div align="center">1,339,190,000</div></td>
+              <td><div align="center">9,596,960.00</div></td>
+              <td><div align="center">139.54</div></td>
+              <td><div align="center">3,705,405.45</div></td>
+              <td><div align="center">361.42</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">India</div></td>
+              <td><div align="center">1,184,639,000</div></td>
+              <td><div align="center">3,287,590.00</div></td>
+              <td><div align="center">360.34</div></td>
+              <td><div align="center">1,269,345.07</div></td>
+              <td><div align="center">933.27</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">United States of America</div></td>
+              <td><div align="center">309,975,000</div></td>
+              <td><div align="center">9,629,091.00</div></td>
+              <td><div align="center">32.19</div></td>
+              <td><div align="center">3,717,811.29</div></td>
+              <td><div align="center">83.38</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Indonesia</div></td>
+              <td><div align="center">234,181,400</div></td>
+              <td><div align="center">1,919,440.00</div></td>
+              <td><div align="center">122.01</div></td>
+              <td><div align="center">741,099.62</div></td>
+              <td><div align="center">315.99</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Brazil</div></td>
+              <td><div align="center">193,364,000</div></td>
+              <td><div align="center">8,511,965.00</div></td>
+              <td><div align="center">22.72</div></td>
+              <td><div align="center">3,286,486.71</div></td>
+              <td><div align="center">58.84</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Pakistan</div></td>
+              <td><div align="center">170,260,000</div></td>
+              <td><div align="center">803,940.00</div></td>
+              <td><div align="center">211.78</div></td>
+              <td><div align="center">310,402.84</div></td>
+              <td><div align="center">548.51</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Bangladesh</div></td>
+              <td><div align="center">164,425,000</div></td>
+              <td><div align="center">144,000.00</div></td>
+              <td><div align="center">1,141.84</div></td>
+              <td><div align="center">55,598.69</div></td>
+              <td><div align="center">2,957.35</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Nigeria</div></td>
+              <td><div align="center">170,123,000</div></td>
+              <td><div align="center">923,768.00</div></td>
+              <td><div align="center">171.32</div></td>
+              <td><div align="center">356,668.67</div></td>
+              <td><div align="center">443.71</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Russia</div></td>
+              <td><div align="center">141,927,297</div></td>
+              <td><div align="center">17,075,200.00</div></td>
+              <td><div align="center">8.31</div></td>
+              <td><div align="center">6,592,768.87</div></td>
+              <td><div align="center">21.53</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Japan</div></td>
+              <td><div align="center">127,380,000</div></td>
+              <td><div align="center">377,835.00</div></td>
+              <td><div align="center">337.13</div></td>
+              <td><div align="center">145,882.85</div></td>
+              <td><div align="center">873.17</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Mexico</div></td>
+              <td><div align="center">108,396,211</div></td>
+              <td><div align="center">1,972,550.00</div></td>
+              <td><div align="center">54.95</div></td>
+              <td><div align="center">761,605.50</div></td>
+              <td><div align="center">142.33</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Phillipines</div></td>
+              <td><div align="center">94,013,200</div></td>
+              <td><div align="center">300,000.00</div></td>
+              <td><div align="center">313.38</div></td>
+              <td><div align="center">115,830.60</div></td>
+              <td><div align="center">811.64</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Vietnam</div></td>
+              <td><div align="center">85,789,573</div></td>
+              <td><div align="center">329,560.00</div></td>
+              <td><div align="center">260.32</div></td>
+              <td><div align="center">127,243.78</div></td>
+              <td><div align="center">674.21</div></td>
             </tr>
             <tr>
-              <td>Germany</td>
-              <td>81,757,600</td>
-              <td>357,021.00</td>
-              <td>229.00</td>
-              <td>137,846.52</td>
-              <td>593.11</td>
+              <td><div align="center">Germany</div></td>
+              <td><div align="center">81,757,600</div></td>
+              <td><div align="center">357,021.00</div></td>
+              <td><div align="center">229.00</div></td>
+              <td><div align="center">137,846.52</div></td>
+              <td><div align="center">593.11</div></td>
             </tr>
             <tr>
-              <td>Ethiopia</td>
-              <td>79,221,000</td>
-              <td>1,127,127.00</td>
-              <td>70.29</td>
-              <td>435,185.99</td>
-              <td>182.04</td>
+              <td><div align="center">Ethiopia</div></td>
+              <td><div align="center">79,221,000</div></td>
+              <td><div align="center">1,127,127.00</div></td>
+              <td><div align="center">70.29</div></td>
+              <td><div align="center">435,185.99</div></td>
+              <td><div align="center">182.04</div></td>
             </tr>
             <tr>
-              <td>Egypt</td>
-              <td>78,848,000</td>
-              <td>1,001,450.00</td>
-              <td>78.73</td>
-              <td>386,661.85</td>
-              <td>203.92</td>
+              <td><div align="center">Egypt</div></td>
+              <td><div align="center">78,848,000</div></td>
+              <td><div align="center">1,001,450.00</div></td>
+              <td><div align="center">78.73</div></td>
+              <td><div align="center">386,661.85</div></td>
+              <td><div align="center">203.92</div></td>
             </tr>
             <tr>
-              <td>Iran</td>
-              <td>75,078,000</td>
-              <td>1,648,000.00</td>
-              <td>45.56</td>
-              <td>636,296.10</td>
-              <td>117.99</td>
+              <td><div align="center">Iran</div></td>
+              <td><div align="center">75,078,000</div></td>
+              <td><div align="center">1,648,000.00</div></td>
+              <td><div align="center">45.56</div></td>
+              <td><div align="center">636,296.10</div></td>
+              <td><div align="center">117.99</div></td>
             </tr>
             <tr>
-              <td>Turkey</td>
-              <td>72,561,312</td>
-              <td>780,580.00</td>
-              <td>92.96</td>
-              <td>301,383.50</td>
-              <td>240.76</td>
+              <td><div align="center">Turkey</div></td>
+              <td><div align="center">72,561,312</div></td>
+              <td><div align="center">780,580.00</div></td>
+              <td><div align="center">92.96</div></td>
+              <td><div align="center">301,383.50</div></td>
+              <td><div align="center">240.76</div></td>
             </tr>
             <tr>
-              <td>Congo (Dem. Rep. of )</td>
-              <td>67,827,000</td>
-              <td>2,345,410.00</td>
-              <td>28.92</td>
-              <td>905,567.49</td>
-              <td>74.90</td>
+              <td><div align="center">Congo (Dem. Rep. of )</div></td>
+              <td><div align="center">67,827,000</div></td>
+              <td><div align="center">2,345,410.00</div></td>
+              <td><div align="center">28.92</div></td>
+              <td><div align="center">905,567.49</div></td>
+              <td><div align="center">74.90</div></td>
             </tr>
             <tr>
-              <td>France</td>
-              <td>65,447,374</td>
-              <td>547,030.00</td>
-              <td>119.64</td>
-              <td>211,209.38</td>
-              <td>309.87</td>
+              <td><div align="center">France</div></td>
+              <td><div align="center">65,447,374</div></td>
+              <td><div align="center">547,030.00</div></td>
+              <td><div align="center">119.64</div></td>
+              <td><div align="center">211,209.38</div></td>
+              <td><div align="center">309.87</div></td>
             </tr>
             <tr>
-              <td>Thailand</td>
-              <td>63,525,062</td>
-              <td>514,000.00</td>
-              <td>123.59</td>
-              <td>198,456.43</td>
-              <td>320.10</td>
+              <td><div align="center">Thailand</div></td>
+              <td><div align="center">63,525,062</div></td>
+              <td><div align="center">514,000.00</div></td>
+              <td><div align="center">123.59</div></td>
+              <td><div align="center">198,456.43</div></td>
+              <td><div align="center">320.10</div></td>
             </tr>
             <tr>
-              <td>United Kingdom (UK)</td>
-              <td>62,041,708</td>
-              <td>244,820.00</td>
-              <td>253.42</td>
-              <td>94,525.49</td>
-              <td>656.35</td>
+              <td><div align="center">United Kingdom (UK)</div></td>
+              <td><div align="center">62,041,708</div></td>
+              <td><div align="center">244,820.00</div></td>
+              <td><div align="center">253.42</div></td>
+              <td><div align="center">94,525.49</div></td>
+              <td><div align="center">656.35</div></td>
             </tr>
             <tr>
-              <td>Italy</td>
-              <td>60,340,328</td>
-              <td>301,230.00</td>
-              <td>200.31</td>
-              <td>116,305.51</td>
-              <td>518.81</td>
+              <td><div align="center">Italy</div></td>
+              <td><div align="center">60,340,328</div></td>
+              <td><div align="center">301,230.00</div></td>
+              <td><div align="center">200.31</div></td>
+              <td><div align="center">116,305.51</div></td>
+              <td><div align="center">518.81</div></td>
             </tr>
             <tr>
-              <td>Myanmar</td>
-              <td>50,496,000</td>
-              <td>678,500.00</td>
-              <td>74.42</td>
-              <td>261,970.21</td>
-              <td>192.75</td>
+              <td><div align="center">Myanmar</div></td>
+              <td><div align="center">50,496,000</div></td>
+              <td><div align="center">678,500.00</div></td>
+              <td><div align="center">74.42</div></td>
+              <td><div align="center">261,970.21</div></td>
+              <td><div align="center">192.75</div></td>
             </tr>
             <tr>
-              <td>South Africa</td>
-              <td>49,991,300</td>
-              <td>1,219,912.00</td>
-              <td>40.98</td>
-              <td>471,010.46</td>
-              <td>106.14</td>
+              <td><div align="center">South Africa</div></td>
+              <td><div align="center">49,991,300</div></td>
+              <td><div align="center">1,219,912.00</div></td>
+              <td><div align="center">40.98</div></td>
+              <td><div align="center">471,010.46</div></td>
+              <td><div align="center">106.14</div></td>
             </tr>
             <tr>
-              <td>Korea (South)</td>
-              <td>49,773,145</td>
-              <td>98,480.00</td>
-              <td>505.41</td>
-              <td>38,023.32</td>
-              <td>1,309.02</td>
+              <td><div align="center">Korea (South)</div></td>
+              <td><div align="center">49,773,145</div></td>
+              <td><div align="center">98,480.00</div></td>
+              <td><div align="center">505.41</div></td>
+              <td><div align="center">38,023.32</div></td>
+              <td><div align="center">1,309.02</div></td>
             </tr>
             <tr>
-              <td>Spain</td>
-              <td>46,951,532</td>
-              <td>504,782.00</td>
-              <td>93.01</td>
-              <td>194,897.34</td>
-              <td>240.90</td>
+              <td><div align="center">Spain</div></td>
+              <td><div align="center">46,951,532</div></td>
+              <td><div align="center">504,782.00</div></td>
+              <td><div align="center">93.01</div></td>
+              <td><div align="center">194,897.34</div></td>
+              <td><div align="center">240.90</div></td>
             </tr>
             <tr>
-              <td>Ukraine</td>
-              <td>45,871,738</td>
-              <td>603,700.00</td>
-              <td>75.98</td>
-              <td>233,089.78</td>
-              <td>196.80</td>
+              <td><div align="center">Ukraine</div></td>
+              <td><div align="center">45,871,738</div></td>
+              <td><div align="center">603,700.00</div></td>
+              <td><div align="center">75.98</div></td>
+              <td><div align="center">233,089.78</div></td>
+              <td><div align="center">196.80</div></td>
             </tr>
             <tr>
-              <td>Colombia</td>
-              <td>45,569,000</td>
-              <td>1,138,910.00</td>
-              <td>40.01</td>
-              <td>439,735.43</td>
-              <td>103.63</td>
+              <td><div align="center">Colombia</div></td>
+              <td><div align="center">45,569,000</div></td>
+              <td><div align="center">1,138,910.00</div></td>
+              <td><div align="center">40.01</div></td>
+              <td><div align="center">439,735.43</div></td>
+              <td><div align="center">103.63</div></td>
             </tr>
             <tr>
-              <td>Tanzania</td>
-              <td>45,040,000</td>
-              <td>945,087.00</td>
-              <td>47.66</td>
-              <td>364,899.98</td>
-              <td>123.43</td>
+              <td><div align="center">Tanzania</div></td>
+              <td><div align="center">45,040,000</div></td>
+              <td><div align="center">945,087.00</div></td>
+              <td><div align="center">47.66</div></td>
+              <td><div align="center">364,899.98</div></td>
+              <td><div align="center">123.43</div></td>
             </tr>
             <tr>
-              <td>Kenya</td>
-              <td>40,863,000</td>
-              <td>582,650.00</td>
-              <td>70.13</td>
-              <td>224,962.33</td>
-              <td>181.64</td>
+              <td><div align="center">Kenya</div></td>
+              <td><div align="center">40,863,000</div></td>
+              <td><div align="center">582,650.00</div></td>
+              <td><div align="center">70.13</div></td>
+              <td><div align="center">224,962.33</div></td>
+              <td><div align="center">181.64</div></td>
             </tr>
             <tr>
-              <td>Argentina</td>
-              <td>40,518,951</td>
-              <td>2,766,890.00</td>
-              <td>14.64</td>
-              <td>1,068,301.76</td>
-              <td>37.93</td>
+              <td><div align="center">Argentina</div></td>
+              <td><div align="center">40,518,951</div></td>
+              <td><div align="center">2,766,890.00</div></td>
+              <td><div align="center">14.64</div></td>
+              <td><div align="center">1,068,301.76</div></td>
+              <td><div align="center">37.93</div></td>
             </tr>
             <tr>
-              <td>Sudan</td>
-              <td>31,894,000</td>
-              <td>1,886,068.00</td>
-              <td>16.40</td>
-              <td>728,215.12</td>
-              <td>42.40</td>
+              <td><div align="center">Sudan</div></td>
+              <td><div align="center">31,894,000</div></td>
+              <td><div align="center">1,886,068.00</div></td>
+              <td><div align="center">16.40</div></td>
+              <td><div align="center">728,215.12</div></td>
+              <td><div align="center">42.40</div></td>
             </tr>
             <tr>
-              <td>Poland</td>
-              <td>38,167,329</td>
-              <td>312,685.00</td>
-              <td>122.06</td>
-              <td>120,728.30</td>
-              <td>316.14</td>
+              <td><div align="center">Poland</div></td>
+              <td><div align="center">38,167,329</div></td>
+              <td><div align="center">312,685.00</div></td>
+              <td><div align="center">122.06</div></td>
+              <td><div align="center">120,728.30</div></td>
+              <td><div align="center">316.14</div></td>
             </tr>
             <tr>
-              <td>Algeria</td>
-              <td>35,423,000</td>
-              <td>2,381,740.00</td>
-              <td>14.87</td>
-              <td>919,594.58</td>
-              <td>38.52</td>
+              <td><div align="center">Algeria</div></td>
+              <td><div align="center">35,423,000</div></td>
+              <td><div align="center">2,381,740.00</div></td>
+              <td><div align="center">14.87</div></td>
+              <td><div align="center">919,594.58</div></td>
+              <td><div align="center">38.52</div></td>
             </tr>
             <tr>
-              <td>Canada</td>
-              <td>34,207,000</td>
-              <td>9,976,140.00</td>
-              <td>3.43</td>
-              <td>3,851,807.61</td>
-              <td>8.88</td>
+              <td><div align="center">Canada</div></td>
+              <td><div align="center">34,207,000</div></td>
+              <td><div align="center">9,976,140.00</div></td>
+              <td><div align="center">3.43</div></td>
+              <td><div align="center">3,851,807.61</div></td>
+              <td><div align="center">8.88</div></td>
             </tr>
             <tr>
-              <td>Uganda</td>
-              <td>33,796,000</td>
-              <td>236,040.00</td>
-              <td>143.18</td>
-              <td>91,135.52</td>
-              <td>370.83</td>
+              <td><div align="center">Uganda</div></td>
+              <td><div align="center">33,796,000</div></td>
+              <td><div align="center">236,040.00</div></td>
+              <td><div align="center">143.18</div></td>
+              <td><div align="center">91,135.52</div></td>
+              <td><div align="center">370.83</div></td>
             </tr>
             <tr>
-              <td>Morocco</td>
-              <td>31,892,000</td>
-              <td>446,550.00</td>
-              <td>71.42</td>
-              <td>172,413.85</td>
-              <td>184.97</td>
+              <td><div align="center">Morocco</div></td>
+              <td><div align="center">31,892,000</div></td>
+              <td><div align="center">446,550.00</div></td>
+              <td><div align="center">71.42</div></td>
+              <td><div align="center">172,413.85</div></td>
+              <td><div align="center">184.97</div></td>
             </tr>
             <tr>
-              <td>Iraq</td>
-              <td>31,467,000</td>
-              <td>437,072.00</td>
-              <td>72.00</td>
-              <td>168,754.37</td>
-              <td>186.47</td>
+              <td><div align="center">Iraq</div></td>
+              <td><div align="center">31,467,000</div></td>
+              <td><div align="center">437,072.00</div></td>
+              <td><div align="center">72.00</div></td>
+              <td><div align="center">168,754.37</div></td>
+              <td><div align="center">186.47</div></td>
             </tr>
             <tr>
-              <td>Nepal</td>
-              <td>29,853,000</td>
-              <td>140,800.00</td>
-              <td>212.02</td>
-              <td>54,363.16</td>
-              <td>549.14</td>
+              <td><div align="center">Nepal</div></td>
+              <td><div align="center">29,853,000</div></td>
+              <td><div align="center">140,800.00</div></td>
+              <td><div align="center">212.02</div></td>
+              <td><div align="center">54,363.16</div></td>
+              <td><div align="center">549.14</div></td>
             </tr>
             <tr>
-              <td>Peru</td>
-              <td>29,461,933</td>
-              <td>1,285,220.00</td>
-              <td>22.92</td>
-              <td>496,226.01</td>
-              <td>59.37</td>
+              <td><div align="center">Peru</div></td>
+              <td><div align="center">29,461,933</div></td>
+              <td><div align="center">1,285,220.00</div></td>
+              <td><div align="center">22.92</div></td>
+              <td><div align="center">496,226.01</div></td>
+              <td><div align="center">59.37</div></td>
             </tr>
             <tr>
-              <td>Afghanistan</td>
-              <td>29,117,000</td>
-              <td>647,500.00</td>
-              <td>44.97</td>
-              <td>250,001.05</td>
-              <td>116.47</td>
+              <td><div align="center">Afghanistan</div></td>
+              <td><div align="center">29,117,000</div></td>
+              <td><div align="center">647,500.00</div></td>
+              <td><div align="center">44.97</div></td>
+              <td><div align="center">250,001.05</div></td>
+              <td><div align="center">116.47</div></td>
             </tr>
             <tr>
-              <td>Venezuela</td>
-              <td>28,888,000</td>
-              <td>912,050.00</td>
-              <td>31.67</td>
-              <td>352,144.33</td>
-              <td>82.03</td>
+              <td><div align="center">Venezuela</div></td>
+              <td><div align="center">28,888,000</div></td>
+              <td><div align="center">912,050.00</div></td>
+              <td><div align="center">31.67</div></td>
+              <td><div align="center">352,144.33</div></td>
+              <td><div align="center">82.03</div></td>
             </tr>
             <tr>
-              <td>Malaysia</td>
-              <td>28,306,700</td>
-              <td>329,750.00</td>
-              <td>85.84</td>
-              <td>127,317.13</td>
-              <td>222.33</td>
+              <td><div align="center">Malaysia</div></td>
+              <td><div align="center">28,306,700</div></td>
+              <td><div align="center">329,750.00</div></td>
+              <td><div align="center">85.84</div></td>
+              <td><div align="center">127,317.13</div></td>
+              <td><div align="center">222.33</div></td>
             </tr>
             <tr>
-              <td>Uzbekistan</td>
-              <td>27,794,000</td>
-              <td>447,400</td>
-              <td>62.12</td>
-              <td>172,742.03</td>
-              <td>160.90</td>
+              <td><div align="center">Uzbekistan</div></td>
+              <td><div align="center">27,794,000</div></td>
+              <td><div align="center">447,400</div></td>
+              <td><div align="center">62.12</div></td>
+              <td><div align="center">172,742.03</div></td>
+              <td><div align="center">160.90</div></td>
             </tr>
             <tr>
-              <td>Saudi Arabia</td>
-              <td>26,246,000</td>
-              <td>1,960,582.00</td>
-              <td>13.39</td>
-              <td>756,984.63</td>
-              <td>34.67</td>
+              <td><div align="center">Saudi Arabia</div></td>
+              <td><div align="center">26,246,000</div></td>
+              <td><div align="center">1,960,582.00</div></td>
+              <td><div align="center">13.39</div></td>
+              <td><div align="center">756,984.63</div></td>
+              <td><div align="center">34.67</div></td>
             </tr>
             <tr>
-              <td>Ghana</td>
-              <td>24,333,000</td>
-              <td>239,460.00</td>
-              <td>101.62</td>
-              <td>92,455.98</td>
-              <td>263.18</td>
+              <td><div align="center">Ghana</div></td>
+              <td><div align="center">24,333,000</div></td>
+              <td><div align="center">239,460.00</div></td>
+              <td><div align="center">101.62</div></td>
+              <td><div align="center">92,455.98</div></td>
+              <td><div align="center">263.18</div></td>
             </tr>
             <tr>
-              <td>Yemen</td>
-              <td>24,256,000</td>
-              <td>527,970.00</td>
-              <td>45.94</td>
-              <td>203,850.27</td>
-              <td>118.99</td>
+              <td><div align="center">Yemen</div></td>
+              <td><div align="center">24,256,000</div></td>
+              <td><div align="center">527,970.00</div></td>
+              <td><div align="center">45.94</div></td>
+              <td><div align="center">203,850.27</div></td>
+              <td><div align="center">118.99</div></td>
             </tr>
             <tr>
-              <td>Korea (North)</td>
-              <td>23,991,000</td>
-              <td>120,540.00</td>
-              <td>199.03</td>
-              <td>46,540.74</td>
-              <td>515.48</td>
+              <td><div align="center">Korea (North)</div></td>
+              <td><div align="center">23,991,000</div></td>
+              <td><div align="center">120,540.00</div></td>
+              <td><div align="center">199.03</div></td>
+              <td><div align="center">46,540.74</div></td>
+              <td><div align="center">515.48</div></td>
             </tr>
             <tr>
-              <td>Mozambique</td>
-              <td>23,406,000</td>
-              <td>801,590.00</td>
-              <td>29.20</td>
-              <td>309,495.50</td>
-              <td>75.63</td>
+              <td><div align="center">Mozambique</div></td>
+              <td><div align="center">23,406,000</div></td>
+              <td><div align="center">801,590.00</div></td>
+              <td><div align="center">29.20</div></td>
+              <td><div align="center">309,495.50</div></td>
+              <td><div align="center">75.63</div></td>
             </tr>
             <tr>
-              <td>Syria</td>
-              <td>22,505,000</td>
-              <td>185,180.00</td>
-              <td>121.53</td>
-              <td>71,498.37</td>
-              <td>314.76</td>
+              <td><div align="center">Syria</div></td>
+              <td><div align="center">22,505,000</div></td>
+              <td><div align="center">185,180.00</div></td>
+              <td><div align="center">121.53</div></td>
+              <td><div align="center">71,498.37</div></td>
+              <td><div align="center">314.76</div></td>
             </tr>
             <tr>
-              <td>Australia</td>
-              <td>23,480,970</td>
-              <td>7,686,850.00</td>
-              <td>2.92</td>
-              <td>2,967,908.16</td>
-              <td>7.55</td>
+              <td><div align="center">Australia</div></td>
+              <td><div align="center">23,480,970</div></td>
+              <td><div align="center">7,686,850.00</div></td>
+              <td><div align="center">2.92</div></td>
+              <td><div align="center">2,967,908.16</div></td>
+              <td><div align="center">7.55</div></td>
             </tr>
             <tr>
-              <td>Cote d'Ivoire</td>
-              <td>21,571,000</td>
-              <td>322,460.00</td>
-              <td>66.90</td>
-              <td>124,502.45</td>
-              <td>173.26</td>
+              <td><div align="center">Cote d'Ivoire</div></td>
+              <td><div align="center">21,571,000</div></td>
+              <td><div align="center">322,460.00</div></td>
+              <td><div align="center">66.90</div></td>
+              <td><div align="center">124,502.45</div></td>
+              <td><div align="center">173.26</div></td>
             </tr>
             <tr>
-              <td>Romania</td>
-              <td>21,466,174</td>
-              <td>237,500.00</td>
-              <td>90.38</td>
-              <td>91,699.23</td>
-              <td>234.09</td>
+              <td><div align="center">Romania</div></td>
+              <td><div align="center">21,466,174</div></td>
+              <td><div align="center">237,500.00</div></td>
+              <td><div align="center">90.38</div></td>
+              <td><div align="center">91,699.23</div></td>
+              <td><div align="center">234.09</div></td>
             </tr>
             <tr>
-              <td>Madagascar</td>
-              <td>21,146,000</td>
-              <td>587,040.00</td>
-              <td>36.02</td>
-              <td>226,657.32</td>
-              <td>93.30</td>
+              <td><div align="center">Madagascar</div></td>
+              <td><div align="center">21,146,000</div></td>
+              <td><div align="center">587,040.00</div></td>
+              <td><div align="center">36.02</div></td>
+              <td><div align="center">226,657.32</div></td>
+              <td><div align="center">93.30</div></td>
             </tr>
             <tr>
-              <td>Sri Lanka</td>
-              <td>20,410,000</td>
-              <td>65,610.00</td>
-              <td>311.08</td>
-              <td>25,332.15</td>
-              <td>805.70</td>
+              <td><div align="center">Sri Lanka</div></td>
+              <td><div align="center">20,410,000</div></td>
+              <td><div align="center">65,610.00</div></td>
+              <td><div align="center">311.08</div></td>
+              <td><div align="center">25,332.15</div></td>
+              <td><div align="center">805.70</div></td>
             </tr>
             <tr>
-              <td>Cameroon</td>
-              <td>19,958,000</td>
-              <td>475,440.00</td>
-              <td>41.98</td>
-              <td>183,568.33</td>
-              <td>108.72</td>
+              <td><div align="center">Cameroon</div></td>
+              <td><div align="center">19,958,000</div></td>
+              <td><div align="center">475,440.00</div></td>
+              <td><div align="center">41.98</div></td>
+              <td><div align="center">183,568.33</div></td>
+              <td><div align="center">108.72</div></td>
             </tr>
             <tr>
-              <td>Angola</td>
-              <td>18,993,000</td>
-              <td>1,246,700.00</td>
-              <td>15.23</td>
-              <td>481,353.36</td>
-              <td>39.46</td>
+              <td><div align="center">Angola</div></td>
+              <td><div align="center">18,993,000</div></td>
+              <td><div align="center">1,246,700.00</div></td>
+              <td><div align="center">15.23</div></td>
+              <td><div align="center">481,353.36</div></td>
+              <td><div align="center">39.46</div></td>
             </tr>
             <tr>
-              <td>Chile</td>
-              <td>17,114,000</td>
-              <td>756,950.00</td>
-              <td>22.61</td>
-              <td>292,259.91</td>
-              <td>58.56</td>
+              <td><div align="center">Chile</div></td>
+              <td><div align="center">17,114,000</div></td>
+              <td><div align="center">756,950.00</div></td>
+              <td><div align="center">22.61</div></td>
+              <td><div align="center">292,259.91</div></td>
+              <td><div align="center">58.56</div></td>
             </tr>
             <tr>
-              <td>Netherlands</td>
-              <td>16,609,518</td>
-              <td>41,526.00</td>
-              <td>399.98</td>
-              <td>16,033.27</td>
-              <td>1,035.94</td>
+              <td><div align="center">Netherlands</div></td>
+              <td><div align="center">16,609,518</div></td>
+              <td><div align="center">41,526.00</div></td>
+              <td><div align="center">399.98</div></td>
+              <td><div align="center">16,033.27</div></td>
+              <td><div align="center">1,035.94</div></td>
             </tr>
             <tr>
-              <td>Burkina Faso</td>
-              <td>16,287,000</td>
-              <td>274,200.00</td>
-              <td>59.40</td>
-              <td>105,869.17</td>
-              <td>153.84</td>
+              <td><div align="center">Burkina Faso</div></td>
+              <td><div align="center">16,287,000</div></td>
+              <td><div align="center">274,200.00</div></td>
+              <td><div align="center">59.40</div></td>
+              <td><div align="center">105,869.17</div></td>
+              <td><div align="center">153.84</div></td>
             </tr>
             <tr>
-              <td>Kazakhstan</td>
-              <td>16,197,000</td>
-              <td>2,717,300.00</td>
-              <td>5.96</td>
-              <td>1,049,154.96</td>
-              <td>15.44</td>
+              <td><div align="center">Kazakhstan</div></td>
+              <td><div align="center">16,197,000</div></td>
+              <td><div align="center">2,717,300.00</div></td>
+              <td><div align="center">5.96</div></td>
+              <td><div align="center">1,049,154.96</div></td>
+              <td><div align="center">15.44</div></td>
             </tr>
             <tr>
-              <td>Niger</td>
-              <td>15,891,000</td>
-              <td>1,267,000.00</td>
-              <td>12.54</td>
-              <td>489,191.23</td>
-              <td>32.48</td>
+              <td><div align="center">Niger</div></td>
+              <td><div align="center">15,891,000</div></td>
+              <td><div align="center">1,267,000.00</div></td>
+              <td><div align="center">12.54</div></td>
+              <td><div align="center">489,191.23</div></td>
+              <td><div align="center">32.48</div></td>
             </tr>
             <tr>
-              <td>Malawi</td>
-              <td>15,692,000</td>
-              <td>118,480.00</td>
-              <td>132.44</td>
-              <td>45,745.36</td>
-              <td>343.03</td>
+              <td><div align="center">Malawi</div></td>
+              <td><div align="center">15,692,000</div></td>
+              <td><div align="center">118,480.00</div></td>
+              <td><div align="center">132.44</div></td>
+              <td><div align="center">45,745.36</div></td>
+              <td><div align="center">343.03</div></td>
             </tr>
             <tr>
-              <td>Mali</td>
-              <td>14,517,176</td>
-              <td>1,240,000.00</td>
-              <td>11.71</td>
-              <td>478,766.48</td>
-              <td>30.32</td>
+              <td><div align="center">Mali</div></td>
+              <td><div align="center">14,517,176</div></td>
+              <td><div align="center">1,240,000.00</div></td>
+              <td><div align="center">11.71</div></td>
+              <td><div align="center">478,766.48</div></td>
+              <td><div align="center">30.32</div></td>
             </tr>
             <tr>
-              <td>Guatemala</td>
-              <td>14,377,000</td>
-              <td>108,890.00</td>
-              <td>132.03</td>
-              <td>42,042.65</td>
-              <td>341.96</td>
+              <td><div align="center">Guatemala</div></td>
+              <td><div align="center">14,377,000</div></td>
+              <td><div align="center">108,890.00</div></td>
+              <td><div align="center">132.03</div></td>
+              <td><div align="center">42,042.65</div></td>
+              <td><div align="center">341.96</div></td>
             </tr>
             <tr>
-              <td>Ecuador</td>
-              <td>14,228,000</td>
-              <td>283,560.00</td>
-              <td>50.18</td>
-              <td>109,483.08</td>
-              <td>129.96</td>
+              <td><div align="center">Ecuador</div></td>
+              <td><div align="center">14,228,000</div></td>
+              <td><div align="center">283,560.00</div></td>
+              <td><div align="center">50.18</div></td>
+              <td><div align="center">109,483.08</div></td>
+              <td><div align="center">129.96</div></td>
             </tr>
             <tr>
-              <td>Cambodia</td>
-              <td>13,395,682</td>
-              <td>181,040.00</td>
-              <td>73.99</td>
-              <td>69,899.91</td>
-              <td>191.64</td>
+              <td><div align="center">Cambodia</div></td>
+              <td><div align="center">13,395,682</div></td>
+              <td><div align="center">181,040.00</div></td>
+              <td><div align="center">73.99</div></td>
+              <td><div align="center">69,899.91</div></td>
+              <td><div align="center">191.64</div></td>
             </tr>
             <tr>
-              <td>Zambia</td>
-              <td>13,257,000</td>
-              <td>752,614.00</td>
-              <td>17.61</td>
-              <td>290,585.77</td>
-              <td>45.62</td>
+              <td><div align="center">Zambia</div></td>
+              <td><div align="center">13,257,000</div></td>
+              <td><div align="center">752,614.00</div></td>
+              <td><div align="center">17.61</div></td>
+              <td><div align="center">290,585.77</div></td>
+              <td><div align="center">45.62</div></td>
             </tr>
             <tr>
-              <td>Senegal</td>
-              <td>12,861,000</td>
-              <td>196,190.00</td>
-              <td>65.55</td>
-              <td>75,749.35</td>
-              <td>169.78</td>
+              <td><div align="center">Senegal</div></td>
+              <td><div align="center">12,861,000</div></td>
+              <td><div align="center">196,190.00</div></td>
+              <td><div align="center">65.55</div></td>
+              <td><div align="center">75,749.35</div></td>
+              <td><div align="center">169.78</div></td>
             </tr>
             <tr>
-              <td>Zimbabwe</td>
-              <td>12,644,000</td>
-              <td>390,580.00</td>
-              <td>32.37</td>
-              <td>150,803.72</td>
-              <td>83.84</td>
+              <td><div align="center">Zimbabwe</div></td>
+              <td><div align="center">12,644,000</div></td>
+              <td><div align="center">390,580.00</div></td>
+              <td><div align="center">32.37</div></td>
+              <td><div align="center">150,803.72</div></td>
+              <td><div align="center">83.84</div></td>
             </tr>
             <tr>
-              <td>Greece</td>
-              <td>11,306,183</td>
-              <td>131,940.00</td>
-              <td>85.69</td>
-              <td>50,942.30</td>
-              <td>221.94</td>
+              <td><div align="center">Greece</div></td>
+              <td><div align="center">11,306,183</div></td>
+              <td><div align="center">131,940.00</div></td>
+              <td><div align="center">85.69</div></td>
+              <td><div align="center">50,942.30</div></td>
+              <td><div align="center">221.94</div></td>
             </tr>
             <tr>
-              <td>Chad</td>
-              <td>11,274,106</td>
-              <td>1,284,000.00</td>
-              <td>8.78</td>
-              <td>495,754.97</td>
-              <td>22.74</td>
+              <td><div align="center">Chad</div></td>
+              <td><div align="center">11,274,106</div></td>
+              <td><div align="center">1,284,000.00</div></td>
+              <td><div align="center">8.78</div></td>
+              <td><div align="center">495,754.97</div></td>
+              <td><div align="center">22.74</div></td>
             </tr>
             <tr>
-              <td>Cuba</td>
-              <td>11,204,000</td>
-              <td>110,860.00</td>
-              <td>101.06</td>
-              <td>42,803.27</td>
-              <td>261.76</td>
+              <td><div align="center">Cuba</div></td>
+              <td><div align="center">11,204,000</div></td>
+              <td><div align="center">110,860.00</div></td>
+              <td><div align="center">101.06</div></td>
+              <td><div align="center">42,803.27</div></td>
+              <td><div align="center">261.76</div></td>
             </tr>
             <tr>
-              <td>Belgium</td>
-              <td>10,827,519</td>
-              <td>30,510.00</td>
-              <td>354.88</td>
-              <td>11,779.97</td>
-              <td>919.15</td>
+              <td><div align="center">Belgium</div></td>
+              <td><div align="center">10,827,519</div></td>
+              <td><div align="center">30,510.00</div></td>
+              <td><div align="center">354.88</div></td>
+              <td><div align="center">11,779.97</div></td>
+              <td><div align="center">919.15</div></td>
             </tr>
             <tr>
-              <td>Portugal</td>
-              <td>10,636,888</td>
-              <td>92,391.00</td>
-              <td>115.13</td>
-              <td>35,672.35</td>
-              <td>298.18</td>
+              <td><div align="center">Portugal</div></td>
+              <td><div align="center">10,636,888</div></td>
+              <td><div align="center">92,391.00</div></td>
+              <td><div align="center">115.13</div></td>
+              <td><div align="center">35,672.35</div></td>
+              <td><div align="center">298.18</div></td>
             </tr>
             <tr>
-              <td>Czech Republic</td>
-              <td>10,512,397</td>
-              <td>78,866.00</td>
-              <td>133.29</td>
-              <td>30,450.32</td>
-              <td>345.23</td>
+              <td><div align="center">Czech Republic</div></td>
+              <td><div align="center">10,512,397</div></td>
+              <td><div align="center">78,866.00</div></td>
+              <td><div align="center">133.29</div></td>
+              <td><div align="center">30,450.32</div></td>
+              <td><div align="center">345.23</div></td>
             </tr>
             <tr>
-              <td>Tunisia</td>
-              <td>10,432,500</td>
-              <td>163,610.00</td>
-              <td>63.76</td>
-              <td>63,170.15</td>
-              <td>165.15</td>
+              <td><div align="center">Tunisia</div></td>
+              <td><div align="center">10,432,500</div></td>
+              <td><div align="center">163,610.00</div></td>
+              <td><div align="center">63.76</div></td>
+              <td><div align="center">63,170.15</div></td>
+              <td><div align="center">165.15</div></td>
             </tr>
             <tr>
-              <td>Guinea</td>
-              <td>10,324,000</td>
-              <td>245,857.00</td>
-              <td>41.99</td>
-              <td>94,925.88</td>
-              <td>108.76</td>
+              <td><div align="center">Guinea</div></td>
+              <td><div align="center">10,324,000</div></td>
+              <td><div align="center">245,857.00</div></td>
+              <td><div align="center">41.99</div></td>
+              <td><div align="center">94,925.88</div></td>
+              <td><div align="center">108.76</div></td>
             </tr>
             <tr>
-              <td>Rwanda</td>
-              <td>10,277,000</td>
-              <td>26,338.00</td>
-              <td>390.20</td>
-              <td>10,169.15</td>
-              <td>1,010.61</td>
+              <td><div align="center">Rwanda</div></td>
+              <td><div align="center">10,277,000</div></td>
+              <td><div align="center">26,338.00</div></td>
+              <td><div align="center">390.20</div></td>
+              <td><div align="center">10,169.15</div></td>
+              <td><div align="center">1,010.61</div></td>
             </tr>
             <tr>
-              <td>Dominican Republic</td>
-              <td>10,225,000</td>
-              <td>48,730.00</td>
-              <td>209.83</td>
-              <td>18,814.75</td>
-              <td>543.46</td>
+              <td><div align="center">Dominican Republic</div></td>
+              <td><div align="center">10,225,000</div></td>
+              <td><div align="center">48,730.00</div></td>
+              <td><div align="center">209.83</div></td>
+              <td><div align="center">18,814.75</div></td>
+              <td><div align="center">543.46</div></td>
             </tr>
             <tr>
-              <td>Haiti</td>
-              <td>10,188,000</td>
-              <td>27,750.00</td>
-              <td>367.14</td>
-              <td>10,714.33</td>
-              <td>950.88</td>
+              <td><div align="center">Haiti</div></td>
+              <td><div align="center">10,188,000</div></td>
+              <td><div align="center">27,750.00</div></td>
+              <td><div align="center">367.14</div></td>
+              <td><div align="center">10,714.33</div></td>
+              <td><div align="center">950.88</div></td>
             </tr>
             <tr>
-              <td>Bolivia</td>
-              <td>10,031,000</td>
-              <td>1,098,580.00</td>
-              <td>9.13</td>
-              <td>424,163.94</td>
-              <td>23.65</td>
+              <td><div align="center">Bolivia</div></td>
+              <td><div align="center">10,031,000</div></td>
+              <td><div align="center">1,098,580.00</div></td>
+              <td><div align="center">9.13</div></td>
+              <td><div align="center">424,163.94</div></td>
+              <td><div align="center">23.65</div></td>
             </tr>
             <tr>
-              <td>Hungary</td>
-              <td>10,013,628</td>
-              <td>93,030.00</td>
-              <td>107.64</td>
-              <td>35,919.07</td>
-              <td>278.78</td>
+              <td><div align="center">Hungary</div></td>
+              <td><div align="center">10,013,628</div></td>
+              <td><div align="center">93,030.00</div></td>
+              <td><div align="center">107.64</div></td>
+              <td><div align="center">35,919.07</div></td>
+              <td><div align="center">278.78</div></td>
             </tr>
             <tr>
-              <td>Serbia & Montenegro</td>
-              <td>9,856,000</td>
-              <td>102,350.00</td>
-              <td>96.30</td>
-              <td>39,517.54</td>
-              <td>249.41</td>
+              <td><div align="center">Serbia & Montenegro</div></td>
+              <td><div align="center">9,856,000</div></td>
+              <td><div align="center">102,350.00</div></td>
+              <td><div align="center">96.30</div></td>
+              <td><div align="center">39,517.54</div></td>
+              <td><div align="center">249.41</div></td>
             </tr>
             <tr>
-              <td>Belarus</td>
-              <td>9,471,900</td>
-              <td>207,600.00</td>
-              <td>45.63</td>
-              <td>80,154.78</td>
-              <td>118.17</td>
+              <td><div align="center">Belarus</div></td>
+              <td><div align="center">9,471,900</div></td>
+              <td><div align="center">207,600.00</div></td>
+              <td><div align="center">45.63</div></td>
+              <td><div align="center">80,154.78</div></td>
+              <td><div align="center">118.17</div></td>
             </tr>
             <tr>
-              <td>Sweden</td>
-              <td>9,366,092</td>
-              <td>449,964.00</td>
-              <td>20.82</td>
-              <td>173,732.00</td>
-              <td>53.91</td>
+              <td><div align="center">Sweden</div></td>
+              <td><div align="center">9,366,092</div></td>
+              <td><div align="center">449,964.00</div></td>
+              <td><div align="center">20.82</div></td>
+              <td><div align="center">173,732.00</div></td>
+              <td><div align="center">53.91</div></td>
             </tr>
             <tr>
-              <td>Somalia</td>
-              <td>9,359,000</td>
-              <td>637,657.00</td>
-              <td>14.68</td>
-              <td>246,200.64</td>
-              <td>38.01</td>
+              <td><div align="center">Somalia</div></td>
+              <td><div align="center">9,359,000</div></td>
+              <td><div align="center">637,657.00</div></td>
+              <td><div align="center">14.68</div></td>
+              <td><div align="center">246,200.64</div></td>
+              <td><div align="center">38.01</div></td>
             </tr>
             <tr>
-              <td>Benin</td>
-              <td>9,212,000</td>
-              <td>112,620.00</td>
-              <td>81.80</td>
-              <td>43,482.81</td>
-              <td>211.85</td>
+              <td><div align="center">Benin</div></td>
+              <td><div align="center">9,212,000</div></td>
+              <td><div align="center">112,620.00</div></td>
+              <td><div align="center">81.80</div></td>
+              <td><div align="center">43,482.81</div></td>
+              <td><div align="center">211.85</div></td>
             </tr>
             <tr>
-              <td>Azerbaijan</td>
-              <td>8,997,400</td>
-              <td>86,600.00</td>
-              <td>103.90</td>
-              <td>33,436.43</td>
-              <td>269.09</td>
+              <td><div align="center">Azerbaijan</div></td>
+              <td><div align="center">8,997,400</div></td>
+              <td><div align="center">86,600.00</div></td>
+              <td><div align="center">103.90</div></td>
+              <td><div align="center">33,436.43</div></td>
+              <td><div align="center">269.09</div></td>
             </tr>
             <tr>
-              <td>Burundi</td>
-              <td>8,519,000</td>
-              <td>27,830.00</td>
-              <td>306.11</td>
-              <td>10,745.22</td>
-              <td>792.82</td>
+              <td><div align="center">Burundi</div></td>
+              <td><div align="center">8,519,000</div></td>
+              <td><div align="center">27,830.00</div></td>
+              <td><div align="center">306.11</div></td>
+              <td><div align="center">10,745.22</div></td>
+              <td><div align="center">792.82</div></td>
             </tr>
             <tr>
-              <td>Austria</td>
-              <td>8,372,930</td>
-              <td>83,858.00</td>
-              <td>99.85</td>
-              <td>32,377.74</td>
-              <td>258.60</td>
+              <td><div align="center">Austria</div></td>
+              <td><div align="center">8,372,930</div></td>
+              <td><div align="center">83,858.00</div></td>
+              <td><div align="center">99.85</div></td>
+              <td><div align="center">32,377.74</div></td>
+              <td><div align="center">258.60</div></td>
             </tr>
             <tr>
-              <td>Switzerland</td>
-              <td>7,782,900</td>
-              <td>41,290.00</td>
-              <td>188.49</td>
-              <td>15,942.15</td>
-              <td>488.20</td>
+              <td><div align="center">Switzerland</div></td>
+              <td><div align="center">7,782,900</div></td>
+              <td><div align="center">41,290.00</div></td>
+              <td><div align="center">188.49</div></td>
+              <td><div align="center">15,942.15</div></td>
+              <td><div align="center">488.20</div></td>
             </tr>
             <tr>
-              <td>Honduras</td>
-              <td>7,616,000</td>
-              <td>112,090.00</td>
-              <td>67.95</td>
-              <td>43,278.17</td>
-              <td>175.98</td>
+              <td><div align="center">Honduras</div></td>
+              <td><div align="center">7,616,000</div></td>
+              <td><div align="center">112,090.00</div></td>
+              <td><div align="center">67.95</div></td>
+              <td><div align="center">43,278.17</div></td>
+              <td><div align="center">175.98</div></td>
             </tr>
             <tr>
-              <td>Israel</td>
-              <td>7,602,400</td>
-              <td>20,770.00</td>
-              <td>366.03</td>
-              <td>8,019.34</td>
-              <td>948.01</td>
+              <td><div align="center">Israel</div></td>
+              <td><div align="center">7,602,400</div></td>
+              <td><div align="center">20,770.00</div></td>
+              <td><div align="center">366.03</div></td>
+              <td><div align="center">8,019.34</div></td>
+              <td><div align="center">948.01</div></td>
             </tr>
             <tr>
-              <td>Bulgaria</td>
-              <td>7,576,751</td>
-              <td>110,910.00</td>
-              <td>68.31</td>
-              <td>42,822.57</td>
-              <td>176.93</td>
+              <td><div align="center">Bulgaria</div></td>
+              <td><div align="center">7,576,751</div></td>
+              <td><div align="center">110,910.00</div></td>
+              <td><div align="center">68.31</div></td>
+              <td><div align="center">42,822.57</div></td>
+              <td><div align="center">176.93</div></td>
             </tr>
             <tr>
-              <td>Tajikstan</td>
-              <td>7,075,000</td>
-              <td>143,100.00</td>
-              <td>49.44</td>
-              <td>55,251.20</td>
-              <td>128.05</td>
+              <td><div align="center">Tajikstan</div></td>
+              <td><div align="center">7,075,000</div></td>
+              <td><div align="center">143,100.00</div></td>
+              <td><div align="center">49.44</div></td>
+              <td><div align="center">55,251.20</div></td>
+              <td><div align="center">128.05</div></td>
             </tr>
             <tr>
-              <td>Papua New Guinea</td>
-              <td>6,888,000</td>
-              <td>462,840.00</td>
-              <td>14.88</td>
-              <td>178,703.45</td>
-              <td>38.54</td>
+              <td><div align="center">Papua New Guinea</div></td>
+              <td><div align="center">6,888,000</div></td>
+              <td><div align="center">462,840.00</div></td>
+              <td><div align="center">14.88</div></td>
+              <td><div align="center">178,703.45</div></td>
+              <td><div align="center">38.54</div></td>
             </tr>
             <tr>
-              <td>Togo</td>
-              <td>6,780,000</td>
-              <td>56,785.00</td>
-              <td>119.40</td>
-              <td>21,924.80</td>
-              <td>309.24</td>
+              <td><div align="center">Togo</div></td>
+              <td><div align="center">6,780,000</div></td>
+              <td><div align="center">56,785.00</div></td>
+              <td><div align="center">119.40</div></td>
+              <td><div align="center">21,924.80</div></td>
+              <td><div align="center">309.24</div></td>
             </tr>
             <tr>
-              <td>Libya</td>
-              <td>6,546,000</td>
-              <td>1,759,540.00</td>
-              <td>3.72</td>
-              <td>679,361.91</td>
-              <td>9.64</td>
+              <td><div align="center">Libya</div></td>
+              <td><div align="center">6,546,000</div></td>
+              <td><div align="center">1,759,540.00</div></td>
+              <td><div align="center">3.72</div></td>
+              <td><div align="center">679,361.91</div></td>
+              <td><div align="center">9.64</div></td>
             </tr>
             <tr>
-              <td>Jordan</td>
-              <td>6,472,000</td>
-              <td>92,300.00</td>
-              <td>70.12</td>
-              <td>35,637.21</td>
-              <td>181.61</td>
+              <td><div align="center">Jordan</div></td>
+              <td><div align="center">6,472,000</div></td>
+              <td><div align="center">92,300.00</div></td>
+              <td><div align="center">70.12</div></td>
+              <td><div align="center">35,637.21</div></td>
+              <td><div align="center">181.61</div></td>
             </tr>
             <tr>
-              <td>Paraguay</td>
-              <td>6,460,000</td>
-              <td>406,750.00</td>
-              <td>15.88</td>
-              <td>157,046.99</td>
-              <td>41.13</td>
+              <td><div align="center">Paraguay</div></td>
+              <td><div align="center">6,460,000</div></td>
+              <td><div align="center">406,750.00</div></td>
+              <td><div align="center">15.88</div></td>
+              <td><div align="center">157,046.99</div></td>
+              <td><div align="center">41.13</div></td>
             </tr>
             <tr>
-              <td>Laos</td>
-              <td>6,436,000</td>
-              <td>236,800.00</td>
-              <td>27.18</td>
-              <td>91,428.95</td>
-              <td>70.39</td>
+              <td><div align="center">Laos</div></td>
+              <td><div align="center">6,436,000</div></td>
+              <td><div align="center">236,800.00</div></td>
+              <td><div align="center">27.18</div></td>
+              <td><div align="center">91,428.95</div></td>
+              <td><div align="center">70.39</div></td>
             </tr>
             <tr>
-              <td>El Salvador</td>
-              <td>6,194,000</td>
-              <td>21,040.00</td>
-              <td>294.39</td>
-              <td>8,123.59</td>
-              <td>762.47</td>
+              <td><div align="center">El Salvador</div></td>
+              <td><div align="center">6,194,000</div></td>
+              <td><div align="center">21,040.00</div></td>
+              <td><div align="center">294.39</div></td>
+              <td><div align="center">8,123.59</div></td>
+              <td><div align="center">762.47</div></td>
             </tr>
             <tr>
-              <td>Sierra Leone</td>
-              <td>5,836,000</td>
-              <td>71,740.00</td>
-              <td>81.35</td>
-              <td>27,698.96</td>
-              <td>210.69</td>
+              <td><div align="center">Sierra Leone</div></td>
+              <td><div align="center">5,836,000</div></td>
+              <td><div align="center">71,740.00</div></td>
+              <td><div align="center">81.35</div></td>
+              <td><div align="center">27,698.96</div></td>
+              <td><div align="center">210.69</div></td>
             </tr>
             <tr>
-              <td>Nicaragua</td>
-              <td>5,822,000</td>
-              <td>129,494.00</td>
-              <td>44.96</td>
-              <td>49,997.89</td>
-              <td>116.44</td>
+              <td><div align="center">Nicaragua</div></td>
+              <td><div align="center">5,822,000</div></td>
+              <td><div align="center">129,494.00</div></td>
+              <td><div align="center">44.96</div></td>
+              <td><div align="center">49,997.89</div></td>
+              <td><div align="center">116.44</div></td>
             </tr>
             <tr>
-              <td>Kyrgyzstan</td>
-              <td>5,550,000</td>
-              <td>198,500.00</td>
-              <td>27.96</td>
-              <td>76,641.25</td>
-              <td>72.42</td>
+              <td><div align="center">Kyrgyzstan</div></td>
+              <td><div align="center">5,550,000</div></td>
+              <td><div align="center">198,500.00</div></td>
+              <td><div align="center">27.96</div></td>
+              <td><div align="center">76,641.25</div></td>
+              <td><div align="center">72.42</div></td>
             </tr>
             <tr>
-              <td>Denmark</td>
-              <td>5,540,241</td>
-              <td>43,094.00</td>
-              <td>128.56</td>
-              <td>16,638.68</td>
-              <td>332.97</td>
+              <td><div align="center">Denmark</div></td>
+              <td><div align="center">5,540,241</div></td>
+              <td><div align="center">43,094.00</div></td>
+              <td><div align="center">128.56</div></td>
+              <td><div align="center">16,638.68</div></td>
+              <td><div align="center">332.97</div></td>
             </tr>
             <tr>
-              <td>Slovakia</td>
-              <td>5,426,645</td>
-              <td>48,845.00</td>
-              <td>111.10</td>
-              <td>18,859.15</td>
-              <td>287.75</td>
+              <td><div align="center">Slovakia</div></td>
+              <td><div align="center">5,426,645</div></td>
+              <td><div align="center">48,845.00</div></td>
+              <td><div align="center">111.10</div></td>
+              <td><div align="center">18,859.15</div></td>
+              <td><div align="center">287.75</div></td>
             </tr>
             <tr>
-              <td>Finland</td>
-              <td>5,366,100</td>
-              <td>337,030.00</td>
-              <td>15.92</td>
-              <td>130,127.96</td>
-              <td>41.24</td>
+              <td><div align="center">Finland</div></td>
+              <td><div align="center">5,366,100</div></td>
+              <td><div align="center">337,030.00</div></td>
+              <td><div align="center">15.92</div></td>
+              <td><div align="center">130,127.96</div></td>
+              <td><div align="center">41.24</div></td>
             </tr>
             <tr>
-              <td>Eritrea</td>
-              <td>5,224,000</td>
-              <td>121,320.00</td>
-              <td>43.06</td>
-              <td>46,841.89</td>
-              <td>111.52</td>
+              <td><div align="center">Eritrea</div></td>
+              <td><div align="center">5,224,000</div></td>
+              <td><div align="center">121,320.00</div></td>
+              <td><div align="center">43.06</div></td>
+              <td><div align="center">46,841.89</div></td>
+              <td><div align="center">111.52</div></td>
             </tr>
             <tr>
-              <td>Turkmenistan</td>
-              <td>5,177,000</td>
-              <td>488,100.00</td>
-              <td>10.61</td>
-              <td>188,456.39</td>
-              <td>27.47</td>
+              <td><div align="center">Turkmenistan</div></td>
+              <td><div align="center">5,177,000</div></td>
+              <td><div align="center">488,100.00</div></td>
+              <td><div align="center">10.61</div></td>
+              <td><div align="center">188,456.39</div></td>
+              <td><div align="center">27.47</div></td>
             </tr>
             <tr>
-              <td>Singapore</td>
-              <td>4,987,600</td>
-              <td>693.00</td>
-              <td>7,197.11</td>
-              <td>267.57</td>
-              <td>18,640.45</td>
+              <td><div align="center">Singapore</div></td>
+              <td><div align="center">4,987,600</div></td>
+              <td><div align="center">693.00</div></td>
+              <td><div align="center">7,197.11</div></td>
+              <td><div align="center">267.57</div></td>
+              <td><div align="center">18,640.45</div></td>
             </tr>
             <tr>
-              <td>Norway</td>
-              <td>4,896,700</td>
-              <td>324,220.00</td>
-              <td>15.10</td>
-              <td>125,181.99</td>
-              <td>39.12</td>
+              <td><div align="center">Norway</div></td>
+              <td><div align="center">4,896,700</div></td>
+              <td><div align="center">324,220.00</div></td>
+              <td><div align="center">15.10</div></td>
+              <td><div align="center">125,181.99</div></td>
+              <td><div align="center">39.12</div></td>
             </tr>
             <tr>
-              <td>United Arab Emirates</td>
-              <td>4,707,000</td>
-              <td>82,880.00</td>
-              <td>56.79</td>
-              <td>32,000.13</td>
-              <td>147.09</td>
+              <td><div align="center">United Arab Emirates</div></td>
+              <td><div align="center">4,707,000</div></td>
+              <td><div align="center">82,880.00</div></td>
+              <td><div align="center">56.79</div></td>
+              <td><div align="center">32,000.13</div></td>
+              <td><div align="center">147.09</div></td>
             </tr>
             <tr>
-              <td>Costa Rica</td>
-              <td>4,640,000</td>
-              <td>51,100.00</td>
-              <td>90.80</td>
-              <td>19,729.81</td>
-              <td>235.18</td>
+              <td><div align="center">Costa Rica</div></td>
+              <td><div align="center">4,640,000</div></td>
+              <td><div align="center">51,100.00</div></td>
+              <td><div align="center">90.80</div></td>
+              <td><div align="center">19,729.81</div></td>
+              <td><div align="center">235.18</div></td>
             </tr>
             <tr>
-              <td>Central African Republic</td>
-              <td>4,506,000</td>
-              <td>622,984.00</td>
-              <td>7.23</td>
-              <td>240,535.37</td>
-              <td>18.73</td>
+              <td><div align="center">Central African Republic</div></td>
+              <td><div align="center">4,506,000</div></td>
+              <td><div align="center">622,984.00</div></td>
+              <td><div align="center">7.23</div></td>
+              <td><div align="center">240,535.37</div></td>
+              <td><div align="center">18.73</div></td>
             </tr>
             <tr>
-              <td>Ireland</td>
-              <td>4,459,300</td>
-              <td>70,280.00</td>
-              <td>63.45</td>
-              <td>27,135.25</td>
-              <td>164.34</td>
+              <td><div align="center">Ireland</div></td>
+              <td><div align="center">4,459,300</div></td>
+              <td><div align="center">70,280.00</div></td>
+              <td><div align="center">63.45</div></td>
+              <td><div align="center">27,135.25</div></td>
+              <td><div align="center">164.34</div></td>
             </tr>
             <tr>
-              <td>Georgia</td>
-              <td>4,436,000</td>
-              <td>69,700.00</td>
-              <td>63.64</td>
-              <td>26,911.31</td>
-              <td>164.84</td>
+              <td><div align="center">Georgia</div></td>
+              <td><div align="center">4,436,000</div></td>
+              <td><div align="center">69,700.00</div></td>
+              <td><div align="center">63.64</div></td>
+              <td><div align="center">26,911.31</div></td>
+              <td><div align="center">164.84</div></td>
             </tr>
             <tr>
-              <td>Croatia</td>
-              <td>4,435,056</td>
-              <td>56,542.00</td>
-              <td>78.44</td>
-              <td>21,830.98</td>
-              <td>203.15</td>
+              <td><div align="center">Croatia</div></td>
+              <td><div align="center">4,435,056</div></td>
+              <td><div align="center">56,542.00</div></td>
+              <td><div align="center">78.44</div></td>
+              <td><div align="center">21,830.98</div></td>
+              <td><div align="center">203.15</div></td>
             </tr>
             <tr>
-              <td>New Zealand</td>
-              <td>4,383,600</td>
-              <td>268,680.00</td>
-              <td>16.32</td>
-              <td>103,737.89</td>
-              <td>42.26</td>
+              <td><div align="center">New Zealand</div></td>
+              <td><div align="center">4,383,600</div></td>
+              <td><div align="center">268,680.00</div></td>
+              <td><div align="center">16.32</div></td>
+              <td><div align="center">103,737.89</div></td>
+              <td><div align="center">42.26</div></td>
             </tr>
             <tr>
-              <td>Lebanon</td>
-              <td>4,255,000</td>
-              <td>10,400.00</td>
-              <td>409.13</td>
-              <td>4,015.46</td>
-              <td>1,059.65</td>
+              <td><div align="center">Lebanon</div></td>
+              <td><div align="center">4,255,000</div></td>
+              <td><div align="center">10,400.00</div></td>
+              <td><div align="center">409.13</div></td>
+              <td><div align="center">4,015.46</div></td>
+              <td><div align="center">1,059.65</div></td>
             </tr>
             <tr>
-              <td>Bosnia & Herzegovina</td>
-              <td>3,760,000</td>
-              <td>51,129.00</td>
-              <td>73.54</td>
-              <td>19,741.01</td>
-              <td>190.47</td>
+              <td><div align="center">Bosnia & Herzegovina</div></td>
+              <td><div align="center">3,760,000</div></td>
+              <td><div align="center">51,129.00</div></td>
+              <td><div align="center">73.54</div></td>
+              <td><div align="center">19,741.01</div></td>
+              <td><div align="center">190.47</div></td>
             </tr>
             <tr>
-              <td>Congo (Rep.)</td>
-              <td>3,759,000</td>
-              <td>342,000.00</td>
-              <td>10.99</td>
-              <td>132,046.88</td>
-              <td>28.47</td>
+              <td><div align="center">Congo (Rep.)</div></td>
+              <td><div align="center">3,759,000</div></td>
+              <td><div align="center">342,000.00</div></td>
+              <td><div align="center">10.99</div></td>
+              <td><div align="center">132,046.88</div></td>
+              <td><div align="center">28.47</div></td>
             </tr>
             <tr>
-              <td>Moldova</td>
-              <td>3,563,800</td>
-              <td>33,843.00</td>
-              <td>105.30</td>
-              <td>13,066.85</td>
-              <td>272.74</td>
+              <td><div align="center">Moldova</div></td>
+              <td><div align="center">3,563,800</div></td>
+              <td><div align="center">33,843.00</div></td>
+              <td><div align="center">105.30</div></td>
+              <td><div align="center">13,066.85</div></td>
+              <td><div align="center">272.74</div></td>
             </tr>
             <tr>
-              <td>Liberia</td>
-              <td>3,476,608</td>
-              <td>111,370.00</td>
-              <td>31.22</td>
-              <td>43,000.18</td>
-              <td>80.85</td>
+              <td><div align="center">Liberia</div></td>
+              <td><div align="center">3,476,608</div></td>
+              <td><div align="center">111,370.00</div></td>
+              <td><div align="center">31.22</div></td>
+              <td><div align="center">43,000.18</div></td>
+              <td><div align="center">80.85</div></td>
             </tr>
             <tr>
-              <td>Uruguay</td>
-              <td>3,372,000</td>
-              <td>176,200.00</td>
-              <td>19.14</td>
-              <td>68,031.17</td>
-              <td>49.57</td>
+              <td><div align="center">Uruguay</div></td>
+              <td><div align="center">3,372,000</div></td>
+              <td><div align="center">176,200.00</div></td>
+              <td><div align="center">19.14</div></td>
+              <td><div align="center">68,031.17</div></td>
+              <td><div align="center">49.57</div></td>
             </tr>
             <tr>
-              <td>Mauritania</td>
-              <td>3,366,000</td>
-              <td>1,030,700.00</td>
-              <td>3.27</td>
-              <td>397,955.33</td>
-              <td>8.46</td>
+              <td><div align="center">Mauritania</div></td>
+              <td><div align="center">3,366,000</div></td>
+              <td><div align="center">1,030,700.00</div></td>
+              <td><div align="center">3.27</div></td>
+              <td><div align="center">397,955.33</div></td>
+              <td><div align="center">8.46</div></td>
             </tr>
             <tr>
-              <td>Lithuania</td>
-              <td>3,329,227</td>
-              <td>65,200.00</td>
-              <td>51.06</td>
-              <td>25,173.85</td>
-              <td>132.25</td>
+              <td><div align="center">Lithuania</div></td>
+              <td><div align="center">3,329,227</div></td>
+              <td><div align="center">65,200.00</div></td>
+              <td><div align="center">51.06</div></td>
+              <td><div align="center">25,173.85</div></td>
+              <td><div align="center">132.25</div></td>
             </tr>
             <tr>
-              <td>Panama</td>
-              <td>3,322,576</td>
-              <td>78,200.00</td>
-              <td>42.49</td>
-              <td>30,193.18</td>
-              <td>110.04</td>
+              <td><div align="center">Panama</div></td>
+              <td><div align="center">3,322,576</div></td>
+              <td><div align="center">78,200.00</div></td>
+              <td><div align="center">42.49</div></td>
+              <td><div align="center">30,193.18</div></td>
+              <td><div align="center">110.04</div></td>
             </tr>
             <tr>
-              <td>Armenia</td>
-              <td>3,238,000</td>
-              <td>29,800.00</td>
-              <td>108.66</td>
-              <td>11,505.84</td>
-              <td>281.42</td>
+              <td><div align="center">Armenia</div></td>
+              <td><div align="center">3,238,000</div></td>
+              <td><div align="center">29,800.00</div></td>
+              <td><div align="center">108.66</div></td>
+              <td><div align="center">11,505.84</div></td>
+              <td><div align="center">281.42</div></td>
             </tr>
             <tr>
-              <td>Albania</td>
-              <td>3,195,000</td>
-              <td>28,748.00</td>
-              <td>111.14</td>
-              <td>11,099.66</td>
-              <td>287.85</td>
+              <td><div align="center">Albania</div></td>
+              <td><div align="center">3,195,000</div></td>
+              <td><div align="center">28,748.00</div></td>
+              <td><div align="center">111.14</div></td>
+              <td><div align="center">11,099.66</div></td>
+              <td><div align="center">287.85</div></td>
             </tr>
             <tr>
-              <td>Kuwait</td>
-              <td>3,051,000</td>
-              <td>17,820.00</td>
-              <td>171.21</td>
-              <td>6,880.34</td>
-              <td>443.44</td>
+              <td><div align="center">Kuwait</div></td>
+              <td><div align="center">3,051,000</div></td>
+              <td><div align="center">17,820.00</div></td>
+              <td><div align="center">171.21</div></td>
+              <td><div align="center">6,880.34</div></td>
+              <td><div align="center">443.44</div></td>
             </tr>
             <tr>
-              <td>Oman</td>
-              <td>2,905,000</td>
-              <td>212,460.00</td>
-              <td>13.67</td>
-              <td>82,031.23</td>
-              <td>35.41</td>
+              <td><div align="center">Oman</div></td>
+              <td><div align="center">2,905,000</div></td>
+              <td><div align="center">212,460.00</div></td>
+              <td><div align="center">13.67</div></td>
+              <td><div align="center">82,031.23</div></td>
+              <td><div align="center">35.41</div></td>
             </tr>
             <tr>
-              <td>Mongolia</td>
-              <td>2,768,800</td>
-              <td>1,565,000.00</td>
-              <td>1.77</td>
-              <td>604,249.63</td>
-              <td>4.58</td>
+              <td><div align="center">Mongolia</div></td>
+              <td><div align="center">2,768,800</div></td>
+              <td><div align="center">1,565,000.00</div></td>
+              <td><div align="center">1.77</div></td>
+              <td><div align="center">604,249.63</div></td>
+              <td><div align="center">4.58</div></td>
             </tr>
             <tr>
-              <td>Jamaica</td>
-              <td>2,730,000</td>
-              <td>10,991.00</td>
-              <td>248.39</td>
-              <td>4,243.65</td>
-              <td>643.31</td>
+              <td><div align="center">Jamaica</div></td>
+              <td><div align="center">2,730,000</div></td>
+              <td><div align="center">10,991.00</div></td>
+              <td><div align="center">248.39</div></td>
+              <td><div align="center">4,243.65</div></td>
+              <td><div align="center">643.31</div></td>
             </tr>
             <tr>
-              <td>Latvia</td>
-              <td>2,237,800</td>
-              <td>64,589.00</td>
-              <td>34.65</td>
-              <td>24,937.94</td>
-              <td>89.73</td>
+              <td><div align="center">Latvia</div></td>
+              <td><div align="center">2,237,800</div></td>
+              <td><div align="center">64,589.00</div></td>
+              <td><div align="center">34.65</div></td>
+              <td><div align="center">24,937.94</div></td>
+              <td><div align="center">89.73</div></td>
             </tr>
             <tr>
-              <td>Namibia</td>
-              <td>2,212,000</td>
-              <td>825,418.00</td>
-              <td>2.68</td>
-              <td>318,695.54</td>
-              <td>6.94</td>
+              <td><div align="center">Namibia</div></td>
+              <td><div align="center">2,212,000</div></td>
+              <td><div align="center">825,418.00</div></td>
+              <td><div align="center">2.68</div></td>
+              <td><div align="center">318,695.54</div></td>
+              <td><div align="center">6.94</div></td>
             </tr>
             <tr>
-              <td>Lesotho</td>
-              <td>2,084,000</td>
-              <td>30,355.00</td>
-              <td>68.65</td>
-              <td>11,720.13</td>
-              <td>177.81</td>
+              <td><div align="center">Lesotho</div></td>
+              <td><div align="center">2,084,000</div></td>
+              <td><div align="center">30,355.00</div></td>
+              <td><div align="center">68.65</div></td>
+              <td><div align="center">11,720.13</div></td>
+              <td><div align="center">177.81</div></td>
             </tr>
             <tr>
-              <td>Slovenia</td>
-              <td>2,062,700</td>
-              <td>20,273.00</td>
-              <td>101.75</td>
-              <td>7,827.45</td>
-              <td>263.52</td>
+              <td><div align="center">Slovenia</div></td>
+              <td><div align="center">2,062,700</div></td>
+              <td><div align="center">20,273.00</div></td>
+              <td><div align="center">101.75</div></td>
+              <td><div align="center">7,827.45</div></td>
+              <td><div align="center">263.52</div></td>
             </tr>
             <tr>
-              <td>Macedonia</td>
-              <td>2,048,620</td>
-              <td>25,333.00</td>
-              <td>80.87</td>
-              <td>9,781.12</td>
-              <td>209.45</td>
+              <td><div align="center">Macedonia</div></td>
+              <td><div align="center">2,048,620</div></td>
+              <td><div align="center">25,333.00</div></td>
+              <td><div align="center">80.87</div></td>
+              <td><div align="center">9,781.12</div></td>
+              <td><div align="center">209.45</div></td>
             </tr>
             <tr>
-              <td>Botswana</td>
-              <td>1,978,000</td>
-              <td>600,370.00</td>
-              <td>3.29</td>
-              <td>231,804.06</td>
-              <td>8.53</td>
+              <td><div align="center">Botswana</div></td>
+              <td><div align="center">1,978,000</div></td>
+              <td><div align="center">600,370.00</div></td>
+              <td><div align="center">3.29</div></td>
+              <td><div align="center">231,804.06</div></td>
+              <td><div align="center">8.53</div></td>
             </tr>
             <tr>
-              <td>Gambia</td>
-              <td>1,751,000</td>
-              <td>11,300.00</td>
-              <td>154.96</td>
-              <td>4,362.95</td>
-              <td>401.33</td>
+              <td><div align="center">Gambia</div></td>
+              <td><div align="center">1,751,000</div></td>
+              <td><div align="center">11,300.00</div></td>
+              <td><div align="center">154.96</div></td>
+              <td><div align="center">4,362.95</div></td>
+              <td><div align="center">401.33</div></td>
             </tr>
             <tr>
-              <td>Qatar</td>
-              <td>1,696,563</td>
-              <td>11,437.00</td>
-              <td>148.34</td>
-              <td>4,415.85</td>
-              <td>384.20</td>
+              <td><div align="center">Qatar</div></td>
+              <td><div align="center">1,696,563</div></td>
+              <td><div align="center">11,437.00</div></td>
+              <td><div align="center">148.34</div></td>
+              <td><div align="center">4,415.85</div></td>
+              <td><div align="center">384.20</div></td>
             </tr>
             <tr>
-              <td>Guinea-Bissau</td>
-              <td>1,647,000</td>
-              <td>36,120.00</td>
-              <td>45.60</td>
-              <td>13,946.00</td>
-              <td>118.10</td>
+              <td><div align="center">Guinea-Bissau</div></td>
+              <td><div align="center">1,647,000</div></td>
+              <td><div align="center">36,120.00</div></td>
+              <td><div align="center">45.60</div></td>
+              <td><div align="center">13,946.00</div></td>
+              <td><div align="center">118.10</div></td>
             </tr>
             <tr>
-              <td>Gabon</td>
-              <td>1,501,000</td>
-              <td>267,667.00</td>
-              <td>5.61</td>
-              <td>103,346.76</td>
-              <td>14.52</td>
+              <td><div align="center">Gabon</div></td>
+              <td><div align="center">1,501,000</div></td>
+              <td><div align="center">267,667.00</div></td>
+              <td><div align="center">5.61</div></td>
+              <td><div align="center">103,346.76</div></td>
+              <td><div align="center">14.52</div></td>
             </tr>
             <tr>
-              <td>Trinidad & Tobago</td>
-              <td>1,344,000</td>
-              <td>5,128.00</td>
-              <td>262.09</td>
-              <td>1,979.93</td>
-              <td>678.81</td>
+              <td><div align="center">Trinidad & Tobago</div></td>
+              <td><div align="center">1,344,000</div></td>
+              <td><div align="center">5,128.00</div></td>
+              <td><div align="center">262.09</div></td>
+              <td><div align="center">1,979.93</div></td>
+              <td><div align="center">678.81</div></td>
             </tr>
             <tr>
-              <td>Estonia</td>
-              <td>1,340,021</td>
-              <td>45,226.00</td>
-              <td>29.63</td>
-              <td>17,461.85</td>
-              <td>76.74</td>
+              <td><div align="center">Estonia</div></td>
+              <td><div align="center">1,340,021</div></td>
+              <td><div align="center">45,226.00</div></td>
+              <td><div align="center">29.63</div></td>
+              <td><div align="center">17,461.85</div></td>
+              <td><div align="center">76.74</div></td>
             </tr>
             <tr>
-              <td>Mauritius</td>
-              <td>1,297,000</td>
-              <td>2,040.00</td>
-              <td>635.78</td>
-              <td>787.65</td>
-              <td>1,646.67</td>
+              <td><div align="center">Mauritius</div></td>
+              <td><div align="center">1,297,000</div></td>
+              <td><div align="center">2,040.00</div></td>
+              <td><div align="center">635.78</div></td>
+              <td><div align="center">787.65</div></td>
+              <td><div align="center">1,646.67</div></td>
             </tr>
             <tr>
-              <td>Swaziland</td>
-              <td>1,202,000</td>
-              <td>17,363.00</td>
-              <td>69.23</td>
-              <td>6,703.89</td>
-              <td>179.30</td>
+              <td><div align="center">Swaziland</div></td>
+              <td><div align="center">1,202,000</div></td>
+              <td><div align="center">17,363.00</div></td>
+              <td><div align="center">69.23</div></td>
+              <td><div align="center">6,703.89</div></td>
+              <td><div align="center">179.30</div></td>
             </tr>
             <tr>
-              <td>East Timor</td>
-              <td>1,171,000</td>
-              <td>15,007.00</td>
-              <td>78.03</td>
-              <td>5,794.23</td>
-              <td>202.10</td>
+              <td><div align="center">East Timor</div></td>
+              <td><div align="center">1,171,000</div></td>
+              <td><div align="center">15,007.00</div></td>
+              <td><div align="center">78.03</div></td>
+              <td><div align="center">5,794.23</div></td>
+              <td><div align="center">202.10</div></td>
             </tr>
             <tr>
-              <td>Djibouti</td>
-              <td>879,000</td>
-              <td>23,000.00</td>
-              <td>38.22</td>
-              <td>8,880.35</td>
-              <td>98.98</td>
+              <td><div align="center">Djibouti</div></td>
+              <td><div align="center">879,000</div></td>
+              <td><div align="center">23,000.00</div></td>
+              <td><div align="center">38.22</div></td>
+              <td><div align="center">8,880.35</div></td>
+              <td><div align="center">98.98</div></td>
             </tr>
             <tr>
-              <td>Fiji</td>
-              <td>854,000</td>
-              <td>18,270.00</td>
-              <td>46.74</td>
-              <td>7,054.08</td>
-              <td>121.06</td>
+              <td><div align="center">Fiji</div></td>
+              <td><div align="center">854,000</div></td>
+              <td><div align="center">18,270.00</div></td>
+              <td><div align="center">46.74</div></td>
+              <td><div align="center">7,054.08</div></td>
+              <td><div align="center">121.06</div></td>
             </tr>
             <tr>
-              <td>Bahrain</td>
-              <td>807,000</td>
-              <td>665.00</td>
-              <td>1,213.53</td>
-              <td>256.76</td>
-              <td>3,143.04</td>
+              <td><div align="center">Bahrain</div></td>
+              <td><div align="center">807,000</div></td>
+              <td><div align="center">665.00</div></td>
+              <td><div align="center">1,213.53</div></td>
+              <td><div align="center">256.76</div></td>
+              <td><div align="center">3,143.04</div></td>
             </tr>
             <tr>
-              <td>Cyprus</td>
-              <td>801,851</td>
-              <td>9,250.00</td>
-              <td>86.69</td>
-              <td>3,571.44</td>
-              <td>224.52</td>
+              <td><div align="center">Cyprus</div></td>
+              <td><div align="center">801,851</div></td>
+              <td><div align="center">9,250.00</div></td>
+              <td><div align="center">86.69</div></td>
+              <td><div align="center">3,571.44</div></td>
+              <td><div align="center">224.52</div></td>
             </tr>
             <tr>
-              <td>Guyana</td>
-              <td>761,000</td>
-              <td>214,970.00</td>
-              <td>3.54</td>
-              <td>83,000.35</td>
-              <td>9.17</td>
+              <td><div align="center">Guyana</div></td>
+              <td><div align="center">761,000</div></td>
+              <td><div align="center">214,970.00</div></td>
+              <td><div align="center">3.54</div></td>
+              <td><div align="center">83,000.35</div></td>
+              <td><div align="center">9.17</div></td>
             </tr>
             <tr>
-              <td>Bhutan</td>
-              <td>708,000</td>
-              <td>47,000.00</td>
-              <td>15.06</td>
-              <td>18,146.79</td>
-              <td>39.02</td>
+              <td><div align="center">Bhutan</div></td>
+              <td><div align="center">708,000</div></td>
+              <td><div align="center">47,000.00</div></td>
+              <td><div align="center">15.06</div></td>
+              <td><div align="center">18,146.79</div></td>
+              <td><div align="center">39.02</div></td>
             </tr>
             <tr>
-              <td>Equatorial Guinea</td>
-              <td>693,000</td>
-              <td>28,051.00</td>
-              <td>24.71</td>
-              <td>10,830.55</td>
-              <td>63.99</td>
+              <td><div align="center">Equatorial Guinea</div></td>
+              <td><div align="center">693,000</div></td>
+              <td><div align="center">28,051.00</div></td>
+              <td><div align="center">24.71</div></td>
+              <td><div align="center">10,830.55</div></td>
+              <td><div align="center">63.99</div></td>
             </tr>
             <tr>
-              <td>Comoros</td>
-              <td>691,000</td>
-              <td>2,170.00</td>
-              <td>318.43</td>
-              <td>837.84</td>
-              <td>824.74</td>
+              <td><div align="center">Comoros</div></td>
+              <td><div align="center">691,000</div></td>
+              <td><div align="center">2,170.00</div></td>
+              <td><div align="center">318.43</div></td>
+              <td><div align="center">837.84</div></td>
+              <td><div align="center">824.74</div></td>
             </tr>
             <tr>
-              <td>Solomon Islands</td>
-              <td>536,000</td>
-              <td>28,450.00</td>
-              <td>18.84</td>
-              <td>10,984.60</td>
-              <td>48.80</td>
+              <td><div align="center">Solomon Islands</div></td>
+              <td><div align="center">536,000</div></td>
+              <td><div align="center">28,450.00</div></td>
+              <td><div align="center">18.84</div></td>
+              <td><div align="center">10,984.60</div></td>
+              <td><div align="center">48.80</div></td>
             </tr>
             <tr>
-              <td>Suriname</td>
-              <td>524,000</td>
-              <td>163,270.00</td>
-              <td>3.21</td>
-              <td>63,038.87</td>
-              <td>8.31</td>
+              <td><div align="center">Suriname</div></td>
+              <td><div align="center">524,000</div></td>
+              <td><div align="center">163,270.00</div></td>
+              <td><div align="center">3.21</div></td>
+              <td><div align="center">63,038.87</div></td>
+              <td><div align="center">8.31</div></td>
             </tr>
             <tr>
-              <td>Cape Verde</td>
-              <td>513,000</td>
-              <td>4,033.00</td>
-              <td>127.20</td>
-              <td>1,557.15</td>
-              <td>329.45</td>
+              <td><div align="center">Cape Verde</div></td>
+              <td><div align="center">513,000</div></td>
+              <td><div align="center">4,033.00</div></td>
+              <td><div align="center">127.20</div></td>
+              <td><div align="center">1,557.15</div></td>
+              <td><div align="center">329.45</div></td>
             </tr>
             <tr>
-              <td>Luxembourg</td>
-              <td>502,207</td>
-              <td>2,586.00</td>
-              <td>194.20</td>
-              <td>998.46</td>
-              <td>502.98</td>
+              <td><div align="center">Luxembourg</div></td>
+              <td><div align="center">502,207</div></td>
+              <td><div align="center">2,586.00</div></td>
+              <td><div align="center">194.20</div></td>
+              <td><div align="center">998.46</div></td>
+              <td><div align="center">502.98</div></td>
             </tr>
             <tr>
-              <td>Malta</td>
-              <td>416,333</td>
-              <td>316.00</td>
-              <td>1,317.51</td>
-              <td>122.01</td>
-              <td>3,412.34</td>
+              <td><div align="center">Malta</div></td>
+              <td><div align="center">416,333</div></td>
+              <td><div align="center">316.00</div></td>
+              <td><div align="center">1,317.51</div></td>
+              <td><div align="center">122.01</div></td>
+              <td><div align="center">3,412.34</div></td>
             </tr>
             <tr>
-              <td>Brunei</td>
-              <td>407,000</td>
-              <td>5,770.00</td>
-              <td>70.54</td>
-              <td>2,227.81</td>
-              <td>182.69</td>
+              <td><div align="center">Brunei</div></td>
+              <td><div align="center">407,000</div></td>
+              <td><div align="center">5,770.00</div></td>
+              <td><div align="center">70.54</div></td>
+              <td><div align="center">2,227.81</div></td>
+              <td><div align="center">182.69</div></td>
             </tr>
             <tr>
-              <td>Bahamas</td>
-              <td>346,000</td>
-              <td>13,940.00</td>
-              <td>24.82</td>
-              <td>5,382.26</td>
-              <td>64.29</td>
+              <td><div align="center">Bahamas</div></td>
+              <td><div align="center">346,000</div></td>
+              <td><div align="center">13,940.00</div></td>
+              <td><div align="center">24.82</div></td>
+              <td><div align="center">5,382.26</div></td>
+              <td><div align="center">64.29</div></td>
             </tr>
             <tr>
-              <td>Belize</td>
-              <td>322,100</td>
-              <td>22,966.00</td>
-              <td>14.03</td>
-              <td>8,867.22</td>
-              <td>36.32</td>
+              <td><div align="center">Belize</div></td>
+              <td><div align="center">322,100</div></td>
+              <td><div align="center">22,966.00</div></td>
+              <td><div align="center">14.03</div></td>
+              <td><div align="center">8,867.22</div></td>
+              <td><div align="center">36.32</div></td>
             </tr>
             <tr>
-              <td>Iceland</td>
-              <td>317,900</td>
-              <td>103,000.00</td>
-              <td>3.09</td>
-              <td>39,768.51</td>
-              <td>7.99</td>
+              <td><div align="center">Iceland</div></td>
+              <td><div align="center">317,900</div></td>
+              <td><div align="center">103,000.00</div></td>
+              <td><div align="center">3.09</div></td>
+              <td><div align="center">39,768.51</div></td>
+              <td><div align="center">7.99</div></td>
             </tr>
             <tr>
-              <td>Maldives</td>
-              <td>314,000</td>
-              <td>300.00</td>
-              <td>1,046.67</td>
-              <td>115.83</td>
-              <td>2,710.86</td>
+              <td><div align="center">Maldives</div></td>
+              <td><div align="center">314,000</div></td>
+              <td><div align="center">300.00</div></td>
+              <td><div align="center">1,046.67</div></td>
+              <td><div align="center">115.83</div></td>
+              <td><div align="center">2,710.86</div></td>
             </tr>
             <tr>
-              <td>Barbados</td>
-              <td>257,000</td>
-              <td>431.00</td>
-              <td>596.29</td>
-              <td>166.41</td>
-              <td>1,544.38</td>
+              <td><div align="center">Barbados</div></td>
+              <td><div align="center">257,000</div></td>
+              <td><div align="center">431.00</div></td>
+              <td><div align="center">596.29</div></td>
+              <td><div align="center">166.41</div></td>
+              <td><div align="center">1,544.38</div></td>
             </tr>
             <tr>
-              <td>Vanuatu</td>
-              <td>246,000</td>
-              <td>12,200.00</td>
-              <td>20.16</td>
-              <td>4,710.44</td>
-              <td>52.22</td>
+              <td><div align="center">Vanuatu</div></td>
+              <td><div align="center">246,000</div></td>
+              <td><div align="center">12,200.00</div></td>
+              <td><div align="center">20.16</div></td>
+              <td><div align="center">4,710.44</div></td>
+              <td><div align="center">52.22</div></td>
             </tr>
             <tr>
-              <td>Samoa</td>
-              <td>179,000</td>
-              <td>2,944.00</td>
-              <td>60.80</td>
-              <td>1,136.68</td>
-              <td>157.48</td>
+              <td><div align="center">Samoa</div></td>
+              <td><div align="center">179,000</div></td>
+              <td><div align="center">2,944.00</div></td>
+              <td><div align="center">60.80</div></td>
+              <td><div align="center">1,136.68</div></td>
+              <td><div align="center">157.48</div></td>
             </tr>
             <tr>
-              <td>Saint Lucia</td>
-              <td>174,000</td>
-              <td>616.00</td>
-              <td>282.47</td>
-              <td>237.84</td>
-              <td>731.59</td>
+              <td><div align="center">Saint Lucia</div></td>
+              <td><div align="center">174,000</div></td>
+              <td><div align="center">616.00</div></td>
+              <td><div align="center">282.47</div></td>
+              <td><div align="center">237.84</div></td>
+              <td><div align="center">731.59</div></td>
             </tr>
             <tr>
-              <td>Sao Tome & Principe</td>
-              <td>165,000</td>
-              <td>1,001.00</td>
-              <td>164.84</td>
-              <td>386.49</td>
-              <td>426.92</td>
+              <td><div align="center">Sao Tome & Principe</div></td>
+              <td><div align="center">165,000</div></td>
+              <td><div align="center">1,001.00</div></td>
+              <td><div align="center">164.84</div></td>
+              <td><div align="center">386.49</div></td>
+              <td><div align="center">426.92</div></td>
             </tr>
             <tr>
-              <td>Micronesia</td>
-              <td>111,000</td>
-              <td>702.00</td>
-              <td>158.12</td>
-              <td>271.04</td>
-              <td>409.53</td>
+              <td><div align="center">Micronesia</div></td>
+              <td><div align="center">111,000</div></td>
+              <td><div align="center">702.00</div></td>
+              <td><div align="center">158.12</div></td>
+              <td><div align="center">271.04</div></td>
+              <td><div align="center">409.53</div></td>
             </tr>
             <tr>
-              <td>St. Vincent & the Grenadines</td>
-              <td>109,000</td>
-              <td>389.00</td>
-              <td>280.21</td>
-              <td>150.19</td>
-              <td>725.73</td>
+              <td><div align="center">St. Vincent & the Grenadines</div></td>
+              <td><div align="center">109,000</div></td>
+              <td><div align="center">389.00</div></td>
+              <td><div align="center">280.21</div></td>
+              <td><div align="center">150.19</div></td>
+              <td><div align="center">725.73</div></td>
             </tr>
             <tr>
-              <td>Grenada</td>
-              <td>104,000</td>
-              <td>344.00</td>
-              <td>302.33</td>
-              <td>132.82</td>
-              <td>783.02</td>
+              <td><div align="center">Grenada</div></td>
+              <td><div align="center">104,000</div></td>
+              <td><div align="center">344.00</div></td>
+              <td><div align="center">302.33</div></td>
+              <td><div align="center">132.82</div></td>
+              <td><div align="center">783.02</div></td>
             </tr>
             <tr>
-              <td>Tonga</td>
-              <td>104,000</td>
-              <td>748.00</td>
-              <td>139.04</td>
-              <td>288.80</td>
-              <td>360.11</td>
+              <td><div align="center">Tonga</div></td>
+              <td><div align="center">104,000</div></td>
+              <td><div align="center">748.00</div></td>
+              <td><div align="center">139.04</div></td>
+              <td><div align="center">288.80</div></td>
+              <td><div align="center">360.11</div></td>
             </tr>
             <tr>
-              <td>Kiribati</td>
-              <td>100,000</td>
-              <td>811.00</td>
-              <td>123.30</td>
-              <td>313.13</td>
-              <td>319.36</td>
+              <td><div align="center">Kiribati</div></td>
+              <td><div align="center">100,000</div></td>
+              <td><div align="center">811.00</div></td>
+              <td><div align="center">123.30</div></td>
+              <td><div align="center">313.13</div></td>
+              <td><div align="center">319.36</div></td>
             </tr>
             <tr>
-              <td>Antigua & Barbuda</td>
-              <td>89,000</td>
-              <td>443.00</td>
-              <td>200.90</td>
-              <td>171.04</td>
-              <td>520.34</td>
-            </tr>
-            <tr>
-              <td>Seychelles</td>
-              <td>85,000</td>
-              <td>455.00</td>
-              <td>186.81</td>
-              <td>175.68</td>
-              <td>483.84</td>
-            </tr>
-            <tr>
-              <td>Andorra</td>
-              <td>84,082</td>
-              <td>468.00</td>
-              <td>179.66</td>
-              <td>180.70</td>
-              <td>465.32</td>
-            </tr>
-            <tr>
-              <td>Dominica</td>
-              <td>67,000</td>
-              <td>754.00</td>
-              <td>88.86</td>
-              <td>291.12</td>
-              <td>230.14</td>
-            </tr>
-            <tr>
-              <td>Marshall Islands</td>
-              <td>63,000</td>
-              <td>181.00</td>
-              <td>348.07</td>
-              <td>69.88</td>
-              <td>901.49</td>
-            </tr>
-            <tr>
-              <td>Saint Kitts & Nevis</td>
-              <td>38,960</td>
-              <td>261.00</td>
-              <td>149.27</td>
-              <td>100.77</td>
-              <td>386.61</td>
-            </tr>
-            <tr>
-              <td>Liechtenstein</td>
-              <td>35,904</td>
-              <td>160.00</td>
-              <td>224.40</td>
-              <td>61.78</td>
-              <td>581.19</td>
-            </tr>
-            <tr>
-              <td>Monaco</td>
-              <td>33,000</td>
-              <td>2.00</td>
-              <td>16,500.00</td>
-              <td>0.77</td>
-              <td>42,734.82</td>
-            </tr>
-            <tr>
-              <td>San Marino</td>
-              <td>32,386</td>
-              <td>61.00</td>
-              <td>530.92</td>
-              <td>23.55</td>
-              <td>1,375.07</td>
-            </tr>
-            <tr>
-              <td>Palau</td>
-              <td>20,000</td>
-              <td>458.00</td>
-              <td>43.67</td>
-              <td>176.83</td>
-              <td>113.10</td>
-            </tr>
-            <tr>
-              <td>Nauru</td>
-              <td>10,000</td>
-              <td>21.00</td>
-              <td>476.19</td>
-              <td>8.11</td>
-              <td>1,233.33</td>
-            </tr>
-            <tr>
-              <td>Tuvalu</td>
-              <td>10,000</td>
-              <td>26.00</td>
-              <td>384.62</td>
-              <td>10.04</td>
-              <td>996.15</td>
-            </tr>
-            <tr>
-              <td>Vatican City</td>
-              <td>800</td>
-              <td>1.00</td>
-              <td>800.00</td>
-              <td>0.39</td>
-              <td>2,071.99</td>
-            </tr>
-          <td>South Sudan</td>
-            <td>8,260,490</td>
-            <td>619,745.00</td>
-            <td>13.32</td>
-            <td>239,285.00</td>
-            <td>34.52</td>
+              <td><div align="center">Antigua & Barbuda</div></td>
+              <td><div align="center">89,000</div></td>
+              <td><div align="center">443.00</div></td>
+              <td><div align="center">200.90</div></td>
+              <td><div align="center">171.04</div></td>
+              <td><div align="center">520.34</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Seychelles</div></td>
+              <td><div align="center">85,000</div></td>
+              <td><div align="center">455.00</div></td>
+              <td><div align="center">186.81</div></td>
+              <td><div align="center">175.68</div></td>
+              <td><div align="center">483.84</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Andorra</div></td>
+              <td><div align="center">84,082</div></td>
+              <td><div align="center">468.00</div></td>
+              <td><div align="center">179.66</div></td>
+              <td><div align="center">180.70</div></td>
+              <td><div align="center">465.32</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Dominica</div></td>
+              <td><div align="center">67,000</div></td>
+              <td><div align="center">754.00</div></td>
+              <td><div align="center">88.86</div></td>
+              <td><div align="center">291.12</div></td>
+              <td><div align="center">230.14</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Marshall Islands</div></td>
+              <td><div align="center">63,000</div></td>
+              <td><div align="center">181.00</div></td>
+              <td><div align="center">348.07</div></td>
+              <td><div align="center">69.88</div></td>
+              <td><div align="center">901.49</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Saint Kitts & Nevis</div></td>
+              <td><div align="center">38,960</div></td>
+              <td><div align="center">261.00</div></td>
+              <td><div align="center">149.27</div></td>
+              <td><div align="center">100.77</div></td>
+              <td><div align="center">386.61</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Liechtenstein</div></td>
+              <td><div align="center">35,904</div></td>
+              <td><div align="center">160.00</div></td>
+              <td><div align="center">224.40</div></td>
+              <td><div align="center">61.78</div></td>
+              <td><div align="center">581.19</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Monaco</div></td>
+              <td><div align="center">33,000</div></td>
+              <td><div align="center">2.00</div></td>
+              <td><div align="center">16,500.00</div></td>
+              <td><div align="center">0.77</div></td>
+              <td><div align="center">42,734.82</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">San Marino</div></td>
+              <td><div align="center">32,386</div></td>
+              <td><div align="center">61.00</div></td>
+              <td><div align="center">530.92</div></td>
+              <td><div align="center">23.55</div></td>
+              <td><div align="center">1,375.07</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Palau</div></td>
+              <td><div align="center">20,000</div></td>
+              <td><div align="center">458.00</div></td>
+              <td><div align="center">43.67</div></td>
+              <td><div align="center">176.83</div></td>
+              <td><div align="center">113.10</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Nauru</div></td>
+              <td><div align="center">10,000</div></td>
+              <td><div align="center">21.00</div></td>
+              <td><div align="center">476.19</div></td>
+              <td><div align="center">8.11</div></td>
+              <td><div align="center">1,233.33</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Tuvalu</div></td>
+              <td><div align="center">10,000</div></td>
+              <td><div align="center">26.00</div></td>
+              <td><div align="center">384.62</div></td>
+              <td><div align="center">10.04</div></td>
+              <td><div align="center">996.15</div></td>
+            </tr>
+            <tr>
+              <td><div align="center">Vatican City</div></td>
+              <td><div align="center">800</div></td>
+              <td><div align="center">1.00</div></td>
+              <td><div align="center">800.00</div></td>
+              <td><div align="center">0.39</div></td>
+              <td><div align="center">2,071.99</div></td>
+            </tr>
+          <td><div align="center">South Sudan</div></td>
+            <td><div align="center">8,260,490</div></td>
+            <td><div align="center">619,745.00</div></td>
+            <td><div align="center">13.32</div></td>
+            <td><div align="center">239,285.00</div></td>
+            <td><div align="center">34.52</div></td>
           </tr>
         </table>
         
         <h2>How To Use</h2>
         <h4>Step 1: Include relative javascript files</h4>
-        <pre class="lines">&lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="jQpaginate.js"&gt;&lt;/script&gt;</pre>
-        <h4>Step 2 (optional): Include stylesheet with both themes</h4>
-        <pre class="lines"><code>&lt;link rel="stylesheet" href="styles.css" media="screen"/&gt;</code></pre>
-        <h4>Step 3: call your function</h4>
-        <pre class="lines">
-        $(function() {
-        	$('table#myTable').paginate();
+        <pre class=""><code>&lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jQpaginate.js"&gt;&lt;/script&gt;</code></pre>
+        <h4>Step 2 (optional): Include stylesheet file</h4>
+        <pre class=""><code>&lt;link rel="stylesheet" href="styles.css" media="screen"/&gt;</code></pre>
+        <h4>Step 3: call your function on table placeholder</h4>
+        <pre class=""><code>
+&lt;script&gt;
+    $(function() {
+        $('table#myTable').paginate({
+             perPage: 10,
+             theme: 'dark',
+             links: '#links',
+             position: '#pos'
         });
+    });
+&lt;/script&gt;</code>
         </pre>
+        <h4>The HTML layout</h4>
+        <pre><code>
+&lt;div id="links"&gt;&lt;/div&gt;&lt;div id="pos"&gt;&lt;/div&gt;
+&lt;table id="myTable" &gt;
+   &lt;thead&gt;
+       &lt;tr&gt;
+       &lt;!-- All rows & other content within thead will remain static !--&gt;
+       &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+       &lt;!-- All rows contained in tbody will be used to paginate !--&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </code></pre>
+        Note that the table layout must include both <code>thead</code> and a <code>tbody</code> section in order to capute data. The number of pages and results will depend on the amount of rows existing in the <code>tbody</code> section. 
+
         <h2>Available Options</h2>
         <table>
           <tbody>
             <tr>
-              <td width="203"><strong>items</strong></td>
+              <td width="203"><strong>perPage</strong></td>
               <td width="65">Integer</td>
-              <td width="117">Default: 1</td>
-              <td width="268">Total number of items that will be used to calculate the pages.</td>
-            </tr>
-            <tr>
-              <td><strong>perPage</strong></td>
-              <td>Integer</td>
-              <td>Default: 10</td>
-              <td>Number of items displayed on each page.</td>
+              <td width="117">Default: 10</td>
+              <td width="268">Number of items displayed on each page.</td>
             </tr>
             <tr>
               <td><strong>displayedPages</strong></td>
@@ -1671,20 +1687,60 @@ $(function(){
             <tr>
               <td><strong>hrefTextPrefix</strong></td>
               <td>String</td>
-              <td>Default: "#page-"</td>
+              <td>Default: "#page"</td>
               <td>A string used to build the href attribute, added before the page number.</td>
             </tr>
             <tr>
-              <td><strong>hrefTextSuffix</strong></td>
+              <td><strong>links</strong></td>
               <td>String</td>
-              <td>Default: empty string</td>
-              <td>Another string used to build the href attribute, added after the page number.</td>
+              <td>Default: null</td>
+              <td>ID Tag where pagination links will be displayed.</td>
+            </tr>
+            <tr>
+              <td><strong>positionLinks</strong></td>
+              <td>String</td>
+              <td>Default: null</td>
+              <td>ID Tag where results container will be displayed.</td>
             </tr>
             <tr>
               <td><strong>theme</strong></td>
               <td>String</td>
-              <td>Default: "simple"</td>
+              <td>Default: "light"</td>
               <td>The class of the CSS theme.</td>
+            </tr>
+            <tr>
+              <td><strong>dataTable</strong></td>
+              <td>String</td>
+              <td>Default: &quot;tbody tr&quot;</td>
+              <td>Table section that will be paginated.</td>
+            </tr>
+            <tr>
+              <td><strong>skipper</strong></td>
+              <td>Boolean</td>
+              <td>Default: True</td>
+              <td>Display skipping links that jump a certain number of pages.</td>
+            </tr>
+            <tr>
+              <td><strong>quickEdit</strong></td>
+              <td>Boolean</td>
+              <td>Default: True</td>
+              <td>Allows to quickly go to a certain page number by clicking on the current page number.<br>
+              <img src="images/cedit.png" width="243" height="131"></td>
+            </tr>
+            <tr>
+              <td><strong>quickEditType</strong></td>
+              <td>String</td>
+              <td>Default: 'click'</td>
+              <td><p>In relation with <strong>quickEdit.</strong></p>
+              <p>Option 1: 'dblclick' (double click)</p>
+              <p>Option 2: 'click' (click once)</p></td>
+            </tr>
+            <tr>
+              <td><strong>pageOnly</strong></td>
+              <td>Boolean</td>
+              <td>Default: False</td>
+              <td><p><strong>True</strong>: displays page number and total pages.</p>
+              <p><strong>False</strong>: displays only page number</p></td>
             </tr>
             <tr>
               <td><strong>onInit</strong></td>
@@ -1694,7 +1750,13 @@ $(function(){
             </tr>
           </tbody>
         </table>
+        
+        <h2>Support & Feedback</h2>
+        For issues, suggestions, remarks and/or insults please see <a href="https://github.com/dtopaloglou/jQpaginate">jQpaginate</a> on Github
+        
+        Thanks for your support!
         <hr>
+        
       </article>
     </div>
   </div>

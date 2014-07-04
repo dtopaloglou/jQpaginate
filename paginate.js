@@ -152,10 +152,10 @@
 				}
 
 				links += (totalPages - page) > fns._skipper() && base.options.skipper ? "<a class='paginate-skip' paginateRef='" + (page + fns._skipper()) + "' href='" + prefix + (page + fns._skipper()) + "'>...</a>" : "";
-				links += (page >= 1) && page < (totalPages - 1) ? "<a class='paginate-last' paginateRef=\"" + totalPages + "\" href='" + prefix + totalPages + "'>Last</a>" : "";
+				links += (page >= 1)  && page < (totalPages - 1) ? "<a class='paginate-last' paginateRef=\"" + totalPages + "\" href='" + prefix + totalPages + "'>Last</a>" : "";
 				links += (page >= 1)  && page < (totalPages - 0) ? "<a class='paginate-next' paginateRef=\"" + nextPage + "\" href='" + prefix + nextPage + "'>Next &raquo;</a>" : "<span  class='disabled'>Next  &raquo;</span>";
 				
-				if(base.options.position != null) {
+				if(base.options.positionLinks != null) {
 					fns.displayOffset();
 				}
 
@@ -245,7 +245,7 @@
 					out = "0 - 0";
 				}
 				
-				$(base.options.position).html("<span class='" + base.options.theme + " current-pos'>" + out + " of <tres class='total-results'>" +  results + "</tres></span>");
+				$(base.options.positionLinks).html("<span class='" + base.options.theme + " current-pos'>" + out + " of <tres class='total-results'>" +  results + "</tres></span>");
 				return (base.options.quickEdit ? fns._fnCl() : this);
 			}
 		}
@@ -260,13 +260,13 @@
 		pageOnly: false,   
 		theme: 'light',
 		dataTable: 'tbody tr',
-		hrefTextPrefix: '#page-',
+		hrefTextPrefix: '#page',
 		skipper: true,
 		clickEditType: 'click',
 		quickEdit: true,
 		currentPage: 1,
-		links: '#links',
-		position: '#pos',
+		links: null,
+		positionLinks: null,
 		onInit: function() { 
 		
 		}

@@ -164,7 +164,7 @@ editable { cursor:text; }
 }
 .compact span, .compact a {
 	float:left;
-	min-width: 14px;
+	min-width: 8px;
 	padding: 0 7px;
 	margin: 0 0px 0 0;
 	display:inline-block;
