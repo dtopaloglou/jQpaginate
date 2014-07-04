@@ -144,7 +144,7 @@
 				for(var x = (page - fns.getLeftLinks()); x <= (page + fns.getRightLinks()); x++) { 
 					if(x == page) {
 						links += "<span class='current'>";
-						links += (base.options.pageOnly == false) ? "Page <editable class='click-edit'>" + x + "</editable> of " + totalPages :  "<editable class='click-edit'>" + x + "</editable>";	
+						links += (base.options.pageOnly == false) ? "Page <editable title='Click to edit' class='click-edit'>" + x + "</editable> of " + totalPages :  "<editable class='click-edit'>" + x + "</editable>";	
 						links += "</span>";
 					} else {
 						links += "<a paginateRef=\"" + x + "\" href='" + prefix + x + "'>" + x + "</a> ";		
@@ -152,10 +152,10 @@
 				}
 
 				links += (totalPages - page) > fns._skipper() && base.options.skipper ? "<a class='paginate-skip' paginateRef='" + (page + fns._skipper()) + "' href='" + prefix + (page + fns._skipper()) + "'>...</a>" : "";
-				links += (page >= 1) && page < (totalPages - 1) ? "<a class='paginate-last' paginateRef=\"" + totalPages + "\" href='" + prefix + totalPages + "'>Last</a>" : "";
+				links += (page >= 1)  && page < (totalPages - 1) ? "<a class='paginate-last' paginateRef=\"" + totalPages + "\" href='" + prefix + totalPages + "'>Last</a>" : "";
 				links += (page >= 1)  && page < (totalPages - 0) ? "<a class='paginate-next' paginateRef=\"" + nextPage + "\" href='" + prefix + nextPage + "'>Next &raquo;</a>" : "<span  class='disabled'>Next  &raquo;</span>";
 				
-				if(base.options.position != null) {
+				if(base.options.positionLinks != null) {
 					fns.displayOffset();
 				}
 
@@ -245,7 +245,7 @@
 					out = "0 - 0";
 				}
 				
-				$(base.options.position).html("<span class='current-pos'>" + out + " of <span class='total-results'>" +  results + "</span></span>");
+				$(base.options.positionLinks).html("<span class='" + base.options.theme + " current-pos'>" + out + " of <tres class='total-results'>" +  results + "</tres></span>");
 				return (base.options.quickEdit ? fns._fnCl() : this);
 			}
 		}
@@ -255,18 +255,18 @@
     };
 	
     $.fn.paginate.defaultOptions = {
-        perPage: 28,
+        perPage: 10,
         displayedPages: 2, 
 		pageOnly: false,   
-		theme: 'simple',
+		theme: 'light',
 		dataTable: 'tbody tr',
-		hrefTextPrefix: '#page-',
+		hrefTextPrefix: '#page',
 		skipper: true,
 		clickEditType: 'click',
 		quickEdit: true,
 		currentPage: 1,
-		links: '#links',
-		position: '#pos',
+		links: null,
+		positionLinks: null,
 		onInit: function() { 
 		
 		}
